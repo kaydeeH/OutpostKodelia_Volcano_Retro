@@ -1,0 +1,110 @@
+#config_version=6
+
+switches:
+  s_bumper_left_top_c:
+    number:
+    tags: playfield_active
+  s_bumper_left_top_b:
+    number:
+    tags: playfield_active
+  s_bumper_left_top_a:
+    number:
+    tags: playfield_active
+  s_bumper_left_middle:
+    number:
+    tags: playfield_active
+  s_bumper_right_top:
+    number:
+    tags: playfield_active
+  s_bumper_right_middle:
+    number:
+    tags: playfield_active
+  s_coin_left:
+    number:
+    tags: playfield_active
+  s_coin_center:
+    number:
+    tags: playfield_active
+  s_coin_right:
+    number:
+    tags: playfield_active
+  s_downpost_left:
+    number:
+    tags: playfield_active
+  s_downpost_right:
+    number:
+    tags: playfield_active
+  s_gate_top:
+    number:
+    tags: playfield_active
+  s_gate_bottom:
+    number:
+    tags: playfield_active
+  s_kicker:
+    number:
+  s_pop_left_top:
+    number:
+  s_pop_left_bottom:
+    number:
+  s_pop_right_top:
+    number:
+  s_pop_right_bottom:
+    number:
+  s_slingshot_left:
+    number:
+  s_slingshot_right:
+    number:
+  s_target_100:
+    number:
+    tags: playfield_active
+  s_target_extra_ball:
+    number:
+    tags: playfield_active
+  s_target_left_start_tunnel:
+    number:
+    tags: playfield_active
+  s_target_right_start_tunnel:
+    number:
+    tags: playfield_active
+  s_target_center_collect_tunnel:
+    number:
+    tags: playfield_active
+  s_rollover_stop_tunnel:
+    number:
+    tags: playfield_active
+  s_rollover_gates_top_a:
+    number:
+    tags: playfield_active
+  s_rollover_gates_top_b:
+    number:
+    tags: playfield_active
+  s_rollover_gates_bottom_a:
+    number:
+    tags: playfield_active
+  s_rollover_gates_bottom_b:
+    number:
+    tags: playfield_active
+  s_rollover_center_top:
+    number:
+    tags: playfield_active
+  s_rollover_left_outlane:
+    number:
+    tags: playfield_active
+  s_rollover_right_outlane:
+    number:
+    tags: playfield_outlane
+  s_saucer_left:
+    number:
+  s_saucer_right:
+    number:
+  s_left_flipper:
+    number:
+    tags: left_flipper
+  s_right_flipper:
+    number:
+    tags: right_flipper
+  s_drain:
+    number:
+  s_start:
+    number:
+    tags: start

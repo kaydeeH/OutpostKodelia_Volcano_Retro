@@ -1,0 +1,16 @@
+#config_version=6
+
+assets:
+    sounds:
+        music:
+            track: music
+            load: preload
+        sfx:
+            track: sfx
+            load: preload
+        voice:
+            track: voice
+            load: preload
+    images:
+        preload:
+            load: preload

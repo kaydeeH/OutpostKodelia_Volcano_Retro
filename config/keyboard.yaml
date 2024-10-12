@@ -1,0 +1,88 @@
+#config_version=6
+
+keyboard:
+
+  1:
+    switch: s_coin_left
+  2:
+    switch: s_coin_center
+  3:
+    switch: s_coin_right
+  4:
+    switch: s_pop_left_top
+  5:
+    switch: s_pop_left_bottom
+  6:
+    switch: s_pop_right_top
+  7:
+    switch: s_pop_right_bottom
+
+  q:
+    switch: s_bumper_left_top_c
+  w:
+    switch: s_bumper_left_top_b
+  e:
+    switch: s_bumper_left_top_a
+  r:
+    switch: s_bumper_left_middle
+  t:
+    switch: s_rollover_center_top
+  y:
+    switch: s_bumper_right_top
+  u:
+    switch: s_bumper_right_middle
+  i:
+    switch: s_gate_bottom
+  o:
+    switch: s_gate_top
+  p:
+    switch: s_rollover_stop_tunnel
+  "[":
+    switch: s_target_extra_ball
+  a:
+    switch: s_target_100
+  s:
+    switch: s_start
+  d:
+    switch: s_drain
+  f:
+    switch: s_target_left_start_tunnel
+  g:
+    switch: s_target_right_start_tunnel
+  h:
+    switch: s_target_center_collect_tunnel
+  j:
+    switch: s_saucer_left
+  k:
+    switch: s_saucer_right
+  l:
+    switch: s_kicker
+  ";":
+    switch: s_downpost_left
+  "'":
+    switch: s_downpost_right
+  z:
+    switch: s_left_flipper
+  x:
+    switch: s_slingshot_left
+  c:
+    switch: s_rollover_left_outlane
+  v:
+    switch: s_rollover_gates_top_a
+  b:
+    switch: s_rollover_gates_top_b
+  n:
+    switch: s_rollover_gates_bottom_a
+  m:
+    switch: s_rollover_gates_bottom_b
+  ",":
+    switch: s_rollover_right_outlane
+  .:
+    switch: s_slingshot_right
+  /:
+    switch: s_right_flipper
+
+#
+#  s_downpost_left:
+#  s_downpost_right:
+

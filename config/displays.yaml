@@ -1,0 +1,7 @@
+#config_version=6
+
+displays:
+  window:
+    width: 800
+    height: 480
+    default: true

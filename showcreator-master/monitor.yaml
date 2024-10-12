@@ -1,0 +1,293 @@
+device_size: 0.05
+light:
+  rgb_barrel_rect:
+    rotation: 300
+    shape: RECTANGLE
+    size: 0.08
+    x: 0.39089110849980413
+    y: 0.39482961222091656
+  rgb_bathtub_rect:
+    rotation: 250
+    shape: RECTANGLE
+    size: 0.08
+    x: 0.46259302781041917
+    y: 0.6145710928319624
+  rgb_bug_1:
+    x: 0.42558558558558557
+    y: 0.34665099882491185
+  rgb_bug_2:
+    x: 0.48803564433999214
+    y: 0.3407755581668625
+  rgb_bug_3:
+    x: 0.5481727379553466
+    y: 0.33842538190364274
+  rgb_charwiz_rect:
+    rotation: 290
+    shape: RECTANGLE
+    size: 0.08
+    x: 0.5608460698689955
+    y: 0.6419213973799126
+  rgb_christmastime_rect:
+    rotation: 90
+    shape: RECTANGLE
+    size: 0.08
+    x: 0.48348799126637554
+    y: 0.6801310043668122
+  rgb_doctor_circle:
+    x: 0.6268135526831179
+    y: 0.6122209165687427
+  rgb_doctor_rect:
+    shape: RECTANGLE
+    size: 0.08
+    x: 0.7247985367086373
+    y: 0.604368932038835
+  rgb_grave_arrow:
+    rotation: 20
+    shape: FLIPPER
+    size: 0.04
+    x: 0.6940738719068413
+    y: 0.31768558951965065
+  rgb_grave_circle:
+    size: 0.05
+    x: 0.6546514645902854
+    y: 0.37152391546162405
+  rgb_holiday_christmas:
+    x: 0.4741578535056796
+    y: 0.7309048178613397
+  rgb_holiday_door:
+    shape: RECTANGLE
+    size: 0.08
+    x: 0.4741578535056796
+    y: 0.7743830787309048
+  rgb_holiday_easter:
+    x: 0.5204171562867215
+    y: 0.8131609870740305
+  rgb_holiday_halloween:
+    x: 0.3932040736388563
+    y: 0.7861339600470035
+  rgb_holiday_independence:
+    x: 0.4394633764198982
+    y: 0.81903642773208
+  rgb_holiday_stpat:
+    x: 0.5597375636506071
+    y: 0.7861339600470035
+  rgb_holiday_thanksgiving:
+    x: 0.4070818644731688
+    y: 0.7473560517038778
+  rgb_holiday_valentine:
+    x: 0.5458597728162945
+    y: 0.7438307873090482
+  rgb_jack_circle:
+    x: 0.5851801801801803
+    y: 0.6956521739130435
+  rgb_jack_saucer:
+    x: 0.8257285546415981
+    y: 0.25499412455934195
+  rgb_keepshooting:
+    x: 0.4741578535056796
+    y: 0.8789659224441833
+  rgb_leftloop_arrow:
+    rotation: 310
+    shape: FLIPPER
+    size: 0.04
+    x: 0.27719978165938863
+    y: 0.3056768558951965
+  rgb_leftloop_circle:
+    x: 0.363135526831179
+    y: 0.3419506462984724
+  rgb_lock_rect:
+    rotation: 300
+    shape: RECTANGLE
+    size: 0.08
+    x: 0.39783000391696044
+    y: 0.4477085781433608
+  rgb_lorbit_arrow:
+    rotation: 330
+    shape: FLIPPER
+    size: 0.04
+    x: 0.100995269286754
+    y: 0.44759825327510916
+  rgb_lorbit_circle:
+    size: 0.05
+    x: 0.15496866431649042
+    y: 0.4958871915393654
+  rgb_lramp_arrow:
+    rotation: 330
+    shape: FLIPPER
+    size: 0.04
+    x: 0.3008369723435226
+    y: 0.5087336244541485
+  rgb_lramp_circle:
+    x: 0.3561966314140227
+    y: 0.5616921269095183
+  rgb_lramp_ldiamond:
+    rotation: 330
+    shape: DIAMOND
+    size: 0.08
+    x: 0.25905209557383474
+    y: 0.5346650998824912
+  rgb_lramp_rdiamond:
+    rotation: 330
+    shape: DIAMOND
+    size: 0.08
+    x: 0.36959970887918486
+    y: 0.5043668122270742
+  rgb_mayor_arrow:
+    rotation: 310
+    shape: FLIPPER
+    size: 0.04
+    x: 0.1783533478893741
+    y: 0.5917030567685589
+  rgb_mayor_c_circle:
+    x: 0.36959970887918486
+    y: 0.6408296943231441
+  rgb_mayor_circle:
+    x: 0.2567391304347826
+    y: 0.6263219741480611
+  rgb_mystery_rect:
+    rotation: 20
+    shape: RECTANGLE
+    size: 0.08
+    x: 0.631439482961222
+    y: 0.3196239717978849
+  rgb_oogie_ccw_arrow:
+    shape: FLIPPER
+    size: 0.04
+    x: 0.6016739446870452
+    y: 0.23580786026200876
+  rgb_oogie_ccw_circle:
+    x: 0.6059968664316491
+    y: 0.29142185663924797
+  rgb_oogie_cw_arrow:
+    rotation: 350
+    shape: FLIPPER
+    size: 0.04
+    x: 0.31802765647743814
+    y: 0.23362445414847163
+  rgb_oogie_cw_circle:
+    x: 0.3423188405797102
+    y: 0.29142185663924797
+  rgb_oogie_mode_1:
+    rotation: 80
+    shape: RECTANGLE
+    size: 0.08
+    x: 0.5350600436681223
+    y: 0.49563318777292575
+  rgb_oogie_mode_2:
+    rotation: 80
+    shape: RECTANGLE
+    size: 0.08
+    x: 0.524315866084425
+    y: 0.4705240174672489
+  rgb_oogie_mode_3:
+    rotation: 80
+    shape: RECTANGLE
+    size: 0.08
+    x: 0.5157205240174673
+    y: 0.44759825327510916
+  rgb_oogie_mode_4:
+    rotation: 80
+    shape: RECTANGLE
+    size: 0.08
+    x: 0.5071251819505094
+    y: 0.42139737991266374
+  rgb_oogie_mode_5:
+    rotation: 80
+    shape: RECTANGLE
+    size: 0.08
+    x: 0.49852983988355165
+    y: 0.39847161572052403
+  rgb_oogie_mode_6:
+    rotation: 80
+    shape: RECTANGLE
+    size: 0.08
+    x: 0.48803564433999214
+    y: 0.37485311398354876
+  rgb_oogie_moon:
+    x: 0.5393577147016012
+    y: 0.5229257641921398
+  rgb_oogie_moon2:
+    x: 0.562994905385735
+    y: 0.5414847161572052
+  rgb_oogie_moon3:
+    size: 0.05
+    x: 0.5135716885007278
+    y: 0.5436681222707423
+  rgb_pops_flasher:
+    x: 0.2567391304347826
+    y: 0.11750881316098709
+  rgb_pops_flasher2:
+    x: 0.28449471210340777
+    y: 0.13866039952996476
+  rgb_pops_flasher3:
+    x: 0.23129651390520958
+    y: 0.13748531139835488
+  rgb_rorbit_arrow:
+    rotation: 20
+    shape: FLIPPER
+    size: 0.04
+    x: 0.9154039301310043
+    y: 0.36899563318777295
+  rgb_rorbit_circle:
+    size: 0.05
+    x: 0.8767248908296943
+    y: 0.42139737991266374
+  rgb_rramp_arrow:
+    rotation: 30
+    shape: FLIPPER
+    size: 0.04
+    x: 0.7477947598253275
+    y: 0.4072052401746725
+  rgb_rramp_circle:
+    size: 0.05
+    x: 0.6915765765765766
+    y: 0.45593419506462984
+  rgb_rramp_ldiamond:
+    rotation: 30
+    shape: DIAMOND
+    size: 0.08
+    x: 0.675385820603212
+    y: 0.40540540540540543
+  rgb_rramp_rdiamond:
+    rotation: 30
+    shape: DIAMOND
+    size: 0.08
+    x: 0.788622634643377
+    y: 0.44104803493449785
+  rgb_sally_circle:
+    x: 0.37470035252643946
+    y: 0.6956521739130435
+  rgb_santa_a:
+    x: 0.2035409322365844
+    y: 0.6827262044653349
+  rgb_santa_b:
+    x: 0.876390387523516
+    y: 0.6771844660194174
+  rgb_santa_n:
+    x: 0.7579592540743919
+    y: 0.6771844660194174
+  rgb_santa_s:
+    x: 0.13183901292596945
+    y: 0.6780258519388954
+  rgb_santa_t:
+    x: 0.8171748207989539
+    y: 0.6771844660194174
+  rgb_shock_rect:
+    rotation: 300
+    shape: RECTANGLE
+    size: 0.08
+    x: 0.39551703877790834
+    y: 0.4218566392479436
+  rgb_soup_arrow:
+    rotation: 80
+    shape: FLIPPER
+    size: 0.04
+    x: 0.7349017467248908
+    y: 0.5447598253275109
+  rgb_soup_circle:
+    size: 0.05
+    x: 0.6339064774381368
+    y: 0.5567685589519651
+  rgb_zero_circle:
+    x: 0.046259302781041914
+    y: 0.72737955346651

@@ -1,0 +1,91 @@
+#config_version=6
+
+coils:
+  c_flipper_left:
+    number: 0
+    allow_enable: true
+    default_hold_power: 0.125
+#    default_pulse_ms: 20
+  c_flipper_right:
+    number: 1
+    allow_enable: true
+    default_hold_power: 0.125
+#    default_pulse_ms: 20
+  c_drain_eject:
+    number: 2
+    default_pulse_ms: 20
+  c_saucer_left_eject:
+    number: 3
+  c_saucer_right_eject:
+    number: 4
+  c_pop_left_top:
+    number: 5
+  c_pop_left_bottom:
+    number: 6
+  c_pop_right_top:
+    number: 7
+  c_pop_right_bottom:
+    number: 8
+  c_kicker:
+    number: 9
+  c_slingshot_left:
+    number: 10
+  c_slingshot_right:
+    number: 11
+  c_up_post:
+    number: 12
+  c_down_post:
+    number: 13
+  c_chime_10:
+    number: 14
+  c_chime_100:
+    number: 15
+  c_chime_1000:
+    number: 16
+  c_knocker:
+    number: 17
+  c_upper_gate:
+    number: 18
+  c_lower_gate:
+    number: 19
+
+ball_devices:
+  bd_drain:
+    ball_switches: s_drain
+    eject_coil: c_drain_eject
+    tags: drain, home, trough
+    eject_timeouts: 3s
+    debug: true
+  bd_saucer_left:
+    ball_switches: s_saucer_left
+    eject_coil: c_saucer_left_eject
+    eject_timeouts: 2s
+  bd_saucer_right:
+    ball_switches: s_saucer_right
+    eject_coil: c_saucer_right_eject
+    eject_timeouts: 2s
+  bd_kicker:
+    ball_switches: s_kicker
+    eject_coil: c_kicker
+    eject_timeouts: 2s
+
+autofire_coils:
+  left_slingshot:
+    coil: c_slingshot_left
+    switch: s_slingshot_left
+  right_slingshot:
+    coil: c_slingshot_right
+    switch: s_slingshot_right
+  pop_left_top:
+    coil: c_pop_left_top
+    switch: s_pop_left_top
+  pop_left_bottom:
+    coil: c_pop_left_bottom
+    switch: s_pop_left_bottom
+  pop_right_top:
+    coil: c_pop_right_top
+    switch: s_pop_right_top
+  pop_right_bottom:
+    coil: c_pop_right_bottom
+    switch: s_pop_right_bottom
+

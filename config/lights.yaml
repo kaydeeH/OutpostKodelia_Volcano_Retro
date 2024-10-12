@@ -1,0 +1,23 @@
+#config_version=6
+
+lights:
+  l_top_gate_open:
+    number: 1
+  l_bottom_gate_open:
+    number: 2
+  l_extra_ball_lit:
+    number: 3
+  l_shoot_again_lit:
+    number: 4
+  l_tunnel_1000:
+    number: 5
+  l_tunnel_2000:
+    number: 6
+  l_tunnel_3000:
+    number: 7
+  l_tunnel_4000:
+    number: 8
+  l_tunnel_5000:
+    number: 9
+  l_ball_post:
+    number: 10
