@@ -34,8 +34,10 @@ coils:
     number: 11
   c_up_post:
     number: 12
+    pulse_events: apply_up_post
   c_down_post:
     number: 13
+    pulse_events: apply_down_post
   c_chime_10:
     number: 14
   c_chime_100:

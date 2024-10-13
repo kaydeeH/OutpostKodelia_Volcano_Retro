@@ -1,0 +1,17 @@
+#config_version=6
+
+mode:
+  start_events: ball_started
+  priority: 100
+
+shots:
+  shot_basic_bumper:
+    switch: s_bumper_left_middle, s_bumper_left_top_a, s_bumper_left_top_b, s_bumper_left_top_c, s_bumper_right_middle, s_bumper_right_top
+  shot_slingshot:
+    switch: s_slingshot_left, s_slingshot_right
+
+variable_player:
+  shot_basic_bumper_hit:
+    score: 10
+  shot_slingshot_hit:
+    score: 10

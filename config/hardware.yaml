@@ -1,5 +1,16 @@
 #config_version=6
 
+hardware:
+  platform: opp
+  driverboards: gen2
+
+psus:
+  default:
+    #Gives the capacitors extra time to recharge after firing a coil
+    #  and eases the load on the power supply. Doesn't affect autofire
+    #  devices like flippers, pops, slings.
+    release_wait_ms: 50
+
 playfields:
   playfield:
     tags: default
@@ -15,39 +26,12 @@ flippers:
 
 virtual_platform_start_active_switches: s_drain
 
-hardware:
-  platform: opp
-  driverboards: gen2
-
-mpf:
-  default_light_hw_update_hz: 30
-
-opp:
-  #Use the USB ports defined by your OS for the two STM32 boards
-  ports: COM3, COM4
-  debug: true
-  poll_hz: 50
-  #USING SERIAL NUMBERS INSTEAD OF CHAINS
-  #  Board 0 has serial number 0, Board 1 has serial number 1.
-  #  This is convenient if your OS tends to reassign the serial port.
-  #  MPF will automatically address the correct board even if the ports
-  #     are swapped.
-
-  #For multiple CobraPin boards in a game, you will either have to give
-  #  the STM32 boards on the second CobraPin board new serial numbers
-  #  (10 and 11 are suggested for the 2nd board since 2 is used by the
-  #  CobraPin Xpansion Board)
-  #  <OR> Use the chains section to assign a port to a board number.
-  #  Mixing these up could cause blown FETs, coils, and fuses. Proceed
-  #  with caution. Test without coil power and use the yellow coil LEDs
-  #  for feedback.
-  #chains:
-     #0: /dev/ttyACM0
-     #1: /dev/ttyACM1
-
-psus:
-  default:
-    #Gives the capacitors extra time to recharge after firing a coil
-    #  and eases the load on the power supply. Doesn't affect autofire
-    #  devices like flippers, pops, slings.
-    release_wait_ms: 50
+window:
+  width: 800
+  height: 480
+  title: Volcano
+  resizable: false
+  borderless: true
+  fullscreen: false
+  exit_on_escape: true
+  source_display: window

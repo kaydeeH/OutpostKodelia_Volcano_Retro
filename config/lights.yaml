@@ -1,23 +1,325 @@
 #config_version=6
 
 lights:
-  l_top_gate_open:
-    number: 1
-  l_bottom_gate_open:
-    number: 2
-  l_extra_ball_lit:
-    number: 3
-  l_shoot_again_lit:
-    number: 4
-  l_tunnel_1000:
-    number: 5
-  l_tunnel_2000:
-    number: 6
-  l_tunnel_3000:
-    number: 7
-  l_tunnel_4000:
-    number: 8
-  l_tunnel_5000:
-    number: 9
-  l_ball_post:
-    number: 10
+  l_special:
+    start_channel: 1-0-0
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_collect_seismic:
+    start_channel: 1-0-1
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_left_targets_1:
+    start_channel: 1-0-2
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_left_targets_2:
+    start_channel: 1-0-3
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_left_targets_3:
+    start_channel: 1-0-4
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_left_targets_4:
+    start_channel: 1-0-5
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_left_targets_5:
+    start_channel: 1-0-6
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_left_targets_1k:
+    start_channel: 1-0-7
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_open_gate:
+    start_channel: 1-0-8
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_crater_1:
+    start_channel: 1-0-9
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_crater_2:
+    start_channel: 1-0-10
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_crater_3:
+    start_channel: 1-0-11
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_crater_4:
+    start_channel: 1-0-12
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_lava_mult_2:
+    start_channel: 1-0-13
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_lava_mult_3:
+    start_channel: 1-0-14
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_lava_mult_4:
+    start_channel: 1-0-15
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_craters_capture:
+    start_channel: 1-0-16
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_right_targets_1:
+    start_channel: 1-0-17
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_right_targets_2:
+    start_channel: 1-0-18
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_right_targets_3:
+    start_channel: 1-0-19
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_right_targets_4:
+    start_channel: 1-0-20
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_right_targets_5:
+    start_channel: 1-0-21
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_right_targets_1k:
+    start_channel: 1-0-22
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_extra_ball:
+    start_channel: 1-0-23
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_spinner_1k:
+    start_channel: 1-0-24
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_seismic_mult_2:
+    start_channel: 1-0-25
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_seismic_mult_3:
+    start_channel: 1-0-26
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_seismic_mult_4:
+    start_channel: 1-0-27
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_seismic_mult_5:
+    start_channel: 1-0-28
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_lava_level_1:
+    start_channel: 1-0-29
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_lava_level_2:
+    start_channel: 1-0-30
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bonus_1:
+    start_channel: 1-0-31
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bonus_2:
+    start_channel: 1-0-32
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bonus_3:
+    start_channel: 1-0-33
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bonus_4:
+    start_channel: 1-0-34
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bonus_5:
+    start_channel: 1-0-35
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bonus_6:
+    start_channel: 1-0-36
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bonus_7:
+    start_channel: 1-0-37
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bonus_8:
+    start_channel: 1-0-38
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bonus_9:
+    start_channel: 1-0-39
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bonus_10:
+    start_channel: 1-0-40
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_shoot_again:
+    start_channel: 1-0-41
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_ball_save_1:
+    start_channel: 1-0-42
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_ball_save_2:
+    start_channel: 1-0-43
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_gate_open:
+    start_channel: 1-0-44
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_shooter:
+    start_channel: 1-0-45
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true

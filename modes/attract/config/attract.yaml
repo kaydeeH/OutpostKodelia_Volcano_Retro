@@ -1,18 +1,64 @@
 #config_version=6
-##! show: attract_display_loop
-#! - duration: .1
-#!   events: ok_super
-##! mode: attract
-
 event_player:
   mode_attract_started:
     - init_done
 
+timers:
+  display_loop_timer:
+    start_value: 0
+    end_value: 6
+    tick_interval: 1s
+    restart_on_complete: true
+    direction: up
+    control_events:
+      - action: start
+        event: init_done
+      - action: stop
+        event: mode_attract_will_stop
+
+segment_display_player:
+  timer_display_loop_timer_tick{ticks==0}:
+    display1:
+      text: "{(machine.player1_score):d}"
+      color: black
+      key: attr
+    display2:
+      text: "{(machine.player2_score):d}"
+      color: black
+      key: attr
+    display3:
+      text: "{(machine.player3_score):d}"
+      color: black
+      key: attr
+    display4:
+      text: "{(machine.player4_score):d}"
+      color: black
+      key: attr
+    display5:
+      text: "0000"
+      color: black
+      key: attr
+  timer_display_loop_timer_tick{ticks==3}:
+    display1:
+      text: "1"
+      color: black
+      key: attr
+    display2:
+      text: "2"
+      color: black
+      key: attr
+    display3:
+      text: "3"
+      color: black
+      key: attr
+    display4:
+      text: "4"
+      color: black
+      key: attr
+    display5:
+      text: "0000"
+      color: black
+      key: attr
 
 #show_player:
-#  mode_attract_started: attract_light_show
-#  mode_attract_started.1: attract_display_loop
-##! test
-#! mock_event ok_super
-#! advance_time_and_run .1
-#! assert_event_called ok_super
+#  init_done: attract_light_show

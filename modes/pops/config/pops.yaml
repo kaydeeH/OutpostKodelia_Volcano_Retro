@@ -1,0 +1,29 @@
+#config_version=6
+
+mode:
+  start_events: ball_started
+  priority: 100
+
+shots:
+  pop_left_upper:
+    switch: s_pop_left_top
+  pop_left_bottom:
+    switch: s_pop_left_bottom
+  pop_right_top:
+    switch: s_pop_right_top
+  pop_right_bottom:
+    switch: s_pop_right_bottom
+
+variable_player:
+  pop_left_upper_hit:
+    score: 10
+  pop_left_bottom_hit:
+    score: 10
+  pop_right_top_hit:
+    score: 10
+  pop_right_bottom_hit:
+    score: 10
+
+# TODO
+# Deal with how to change value from 10 pts to 100 pts and lighting the bulb per popper
+

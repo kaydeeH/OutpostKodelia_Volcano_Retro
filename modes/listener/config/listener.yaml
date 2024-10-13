@@ -1,0 +1,42 @@
+#config_version=6
+
+# THIS LISTENS FOR THE FOLLOWING:
+#
+# do_check_extra_ball
+# apply_up_post
+# apply_down_post
+#
+# ALSO this will apply the light changes
+
+mode:
+  start_events: ball_started
+  priority: 100
+  events_when_started: listener_start
+
+#  c_up_post:
+#    number: 12
+#  c_down_post:
+#    number: 13
+
+
+event_player:
+  do_check_extra_ball:
+    - nothing
+  apply_up_post:
+    - nothing
+  apply_down_post:
+    - nothing
+
+show_player:
+  apply_up_post:
+    post_down:
+      action: stop
+    post_up:
+      show_tokens:
+        light_on: l_ball_post
+  apply_down_post:
+    post_up:
+      action: stop
+    post_down:
+      show_tokens:
+        light_off: l_ball_post

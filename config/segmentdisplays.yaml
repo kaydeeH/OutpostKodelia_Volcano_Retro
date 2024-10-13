@@ -1,0 +1,29 @@
+#config_version=6
+hardware:
+  segment_displays: light_segment_displays
+
+segment_displays:
+  display1:
+    size: 6
+    number: 1
+    default_transition_update_hz: 24
+  display2:
+    size: 6
+    number: 1
+    default_transition_update_hz: 24
+  display3:
+    size: 6
+    number: 1
+    default_transition_update_hz: 24
+  display4:
+    size: 6
+    number: 1
+    default_transition_update_hz: 24
+  display5:
+    size: 4
+    number: 1
+    default_transition_update_hz: 24
+
+# Screen display version of segment displays & backglass
+virtual_segment_display_connector:
+  segment_displays: display1, display2, display3, display4, display5
