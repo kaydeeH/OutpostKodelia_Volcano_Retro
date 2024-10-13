@@ -1,4 +1,5 @@
 #config_version=6
+
 event_player:
   mode_attract_started:
     - init_done
@@ -40,25 +41,22 @@ segment_display_player:
       key: attr
   timer_display_loop_timer_tick{ticks==3}:
     display1:
-      text: "1"
+      text: "HIGH"
       color: black
       key: attr
     display2:
-      text: "2"
+      text: " SCORE"
       color: black
       key: attr
     display3:
-      text: "3"
+      text: "------"
       color: black
       key: attr
     display4:
-      text: "4"
+      text: "999999"
       color: black
       key: attr
     display5:
       text: "0000"
       color: black
       key: attr
-
-#show_player:
-#  init_done: attract_light_show

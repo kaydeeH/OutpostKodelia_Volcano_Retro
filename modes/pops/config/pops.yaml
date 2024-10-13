@@ -5,25 +5,23 @@ mode:
   priority: 100
 
 shots:
-  pop_left_upper:
-    switch: s_pop_left_top
-  pop_left_bottom:
-    switch: s_pop_left_bottom
-  pop_right_top:
-    switch: s_pop_right_top
-  pop_right_bottom:
-    switch: s_pop_right_bottom
+  pop_upper:
+    switch: s_pop_upper
+  pop_mid:
+    switch: s_pop_mid
+  pop_lower_left:
+    switch: s_pop_lower_left
+  pop_lower_right:
+    switch: s_pop_lower_right
 
 variable_player:
-  pop_left_upper_hit:
-    score: 10
-  pop_left_bottom_hit:
-    score: 10
-  pop_right_top_hit:
-    score: 10
-  pop_right_bottom_hit:
-    score: 10
+  pop_upper_hit:
+    score: 1000
+  pop_mid_hit:
+    score: 1000
+  pop_lower_left_hit:
+    score: 100
+  pop_lower_right_hit:
+    score: 100
 
-# TODO
-# Deal with how to change value from 10 pts to 100 pts and lighting the bulb per popper
 

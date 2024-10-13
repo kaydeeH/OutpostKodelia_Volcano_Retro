@@ -1,7 +1,6 @@
 #config_version=6
 
 keyboard:
-
   1:
     switch: s_coin_left
   2:
@@ -16,7 +15,6 @@ keyboard:
     switch: s_pop_right_top
   7:
     switch: s_pop_right_bottom
-
   q:
     switch: s_bumper_left_top_c
   w:
@@ -81,8 +79,11 @@ keyboard:
     switch: s_slingshot_right
   /:
     switch: s_right_flipper
-
-#
-#  s_downpost_left:
-#  s_downpost_right:
-
+  right:
+    switch: s_service_enter
+  left:
+    switch: s_service_esc
+  up:
+    switch: s_service_up
+  down:
+    switch: s_service_down

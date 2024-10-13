@@ -18,13 +18,13 @@ coils:
     number: 3
   c_saucer_right_eject:
     number: 4
-  c_pop_left_top:
+  c_pop_upper:
     number: 5
-  c_pop_left_bottom:
+  c_pop_mid:
     number: 6
-  c_pop_right_top:
+  c_pop_lower_left:
     number: 7
-  c_pop_right_bottom:
+  c_pop_lower_right:
     number: 8
   c_kicker:
     number: 9
@@ -78,16 +78,16 @@ autofire_coils:
   right_slingshot:
     coil: c_slingshot_right
     switch: s_slingshot_right
-  pop_left_top:
-    coil: c_pop_left_top
-    switch: s_pop_left_top
-  pop_left_bottom:
-    coil: c_pop_left_bottom
-    switch: s_pop_left_bottom
-  pop_right_top:
-    coil: c_pop_right_top
-    switch: s_pop_right_top
-  pop_right_bottom:
-    coil: c_pop_right_bottom
-    switch: s_pop_right_bottom
+  pop_upper:
+    coil: c_pop_upper
+    switch: s_pop_upper
+  pop_mid:
+    coil: c_pop_mid
+    switch: s_pop_mid
+  pop_lower_left:
+    coil: c_pop_lower_left
+    switch: s_pop_lower_left
+  pop_lower_right:
+    coil: c_pop_lower_right
+    switch: s_pop_lower_right
 

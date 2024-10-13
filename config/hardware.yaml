@@ -25,13 +25,3 @@ flippers:
     activation_switch: s_right_flipper
 
 virtual_platform_start_active_switches: s_drain
-
-window:
-  width: 800
-  height: 480
-  title: Volcano
-  resizable: false
-  borderless: true
-  fullscreen: false
-  exit_on_escape: true
-  source_display: window

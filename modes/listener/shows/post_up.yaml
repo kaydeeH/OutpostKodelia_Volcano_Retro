@@ -1,4 +1,0 @@
-#show_version=6
-- time: 0
-  lights:
-    (light_on) : ffffffff

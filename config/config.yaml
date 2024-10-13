@@ -7,10 +7,11 @@ config:
   - hardware.yaml
   - keyboard.yaml
   - lights.yaml
-  - slides.yaml
   - switches.yaml
   - widgetstyles.yaml
   - segmentdisplays.yaml
+  - credits.yaml
+  - sound.yaml
 
 modes:
 # base modules
@@ -18,13 +19,8 @@ modes:
   - game
   - tilt
   - displays
+  - service
+  - service_dmd
+  - credits
 # game logic
-  #- gates
-  #- pops
-  #- bumpers
-  #- fixed
-  #- listener
-  #- kicker
-  #- tunnel
-
-
+  - pops

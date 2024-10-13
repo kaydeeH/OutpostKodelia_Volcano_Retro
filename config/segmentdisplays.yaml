@@ -27,3 +27,141 @@ segment_displays:
 # Screen display version of segment displays & backglass
 virtual_segment_display_connector:
   segment_displays: display1, display2, display3, display4, display5
+
+widgets:
+  backglass:
+    - type: image
+      image: VolcanoBackglass
+      z: 1
+  display1:
+    - type: segment_display_emulator
+      name: display1
+      display_type: 7seg
+      character_count: 6
+      padding: 0
+      character_spacing: 15
+      segment_width: 0.1
+      segment_interval: .02
+      segment_off_color: ffffffff
+      segment_on_color: 000000ff
+      side_bevel_enabled: false
+      background_color: ffffffff
+      dot_enabled: false
+      comma_enabled: false
+      text: "888888"
+      width: 150
+      height: 22
+      x: 245
+      y: 368
+      z: 200
+  display2:
+    - type: segment_display_emulator
+      name: display2
+      display_type: 7seg
+      character_count: 6
+      padding: 0
+      character_spacing: 15
+      segment_width: 0.1
+      segment_interval: .02
+      segment_off_color: ffffffff
+      segment_on_color: 000000ff
+      side_bevel_enabled: false
+      background_color: ffffffff
+      dot_enabled: false
+      comma_enabled: false
+      text: "888888"
+      width: 150
+      height: 22
+      x: 555
+      y: 368
+      z: 200
+  display3:
+    - type: segment_display_emulator
+      name: display3
+      display_type: 7seg
+      character_count: 6
+      padding: 0
+      character_spacing: 15
+      segment_width: 0.1
+      segment_interval: .02
+      segment_off_color: ffffffff
+      segment_on_color: 000000ff
+      side_bevel_enabled: false
+      background_color: ffffffff
+      dot_enabled: false
+      comma_enabled: false
+      text: "888888"
+      width: 150
+      height: 22
+      x: 245
+      y: 98
+      z: 200
+  display4:
+    - type: segment_display_emulator
+      name: display4
+      display_type: 7seg
+      character_count: 6
+      padding: 0
+      character_spacing: 15
+      segment_width: 0.1
+      segment_interval: .02
+      segment_off_color: ffffffff
+      segment_on_color: 000000ff
+      side_bevel_enabled: false
+      background_color: ffffffff
+      dot_enabled: false
+      comma_enabled: false
+      text: "888888"
+      width: 150
+      height: 22
+      x: 553
+      y: 99
+      z: 200
+  display5:
+    - type: segment_display_emulator
+      name: display5
+      display_type: 7seg
+      character_count: 4
+      padding: 0
+      character_spacing: 1
+      segment_width: 0.1
+      segment_interval: .02
+      segment_off_color: ffffffff
+      segment_on_color: 000000ff
+      side_bevel_enabled: false
+      background_color: ffffffff
+      dot_enabled: false
+      comma_enabled: false
+      text: "8888"
+      width: 12
+      height: 12
+      x: 422.5
+      y: 262.5
+      z: 200
+
+slides:
+  screen_segement_display: []
+
+slide_player:
+  displays_init_done: screen_segement_display
+
+widget_player:
+  displays_init_done:
+    backglass:
+      slide: screen_segement_display
+      priority: 10
+    display1:
+      slide: screen_segement_display
+      priority: 10
+    display2:
+      slide: screen_segement_display
+      priority: 10
+    display3:
+      slide: screen_segement_display
+      priority: 10
+    display4:
+      slide: screen_segement_display
+      priority: 10
+    display5:
+      slide: screen_segement_display
+      priority: 10
