@@ -8,13 +8,13 @@ keyboard:
   3:
     switch: s_coin_right
   4:
-    switch: s_pop_left_top
+    switch: s_pop_upper
   5:
-    switch: s_pop_left_bottom
+    switch: s_pop_mid
   6:
-    switch: s_pop_right_top
+    switch: s_pop_lower_left
   7:
-    switch: s_pop_right_bottom
+    switch: s_pop_lower_right
   q:
     switch: s_bumper_left_top_c
   w:

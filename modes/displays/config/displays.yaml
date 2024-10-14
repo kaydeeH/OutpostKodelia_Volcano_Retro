@@ -1,4 +1,6 @@
 #config_version=6
+
+#This mode manages centralized handling for all display updates during a game.
 mode:
   start_events: reset_complete
   events_when_started: displays_init_done
@@ -6,6 +8,14 @@ mode:
   game_mode: false
 
 segment_display_player:
+  #Set the player/ball number to the center display during a game.
+  mode_game_started:
+    display5:
+      text: "P{current_player.number:d}B{current_player.ball:d}"
+      color: black
+      key: attr
+
+  #Add players to displays when they are added to the game.
   player_added{num==1}:
     display1:
       text: "{players[0].score:d}"
@@ -38,6 +48,8 @@ segment_display_player:
       text: "{players[3].score:d}"
       key: scores
       color: black
+
+  #Remove scores when game ended.
   game_ended:
     display1:
       action: remove
@@ -51,27 +63,55 @@ segment_display_player:
     display4:
       action: remove
       key: scores
-  player_score{player_num==1}:
+
+  #Update scores when points are collected, and terminate flashing.
+  player_score{player_num==1 and change>0}:
     display1:
       text: "{players[0].score:d}"
+      action: no_flash
       key: scores
       color: black
-      #priority: 100
-  player_score{player_num==2}:
+  player_score{player_num==2 and change>0}:
     display2:
       text: "{players[1].score:d}"
+      action: no_flash
       key: scores
       color: black
-      #priority: 100
-  player_score{player_num==3}:
+  player_score{player_num==3 and change>0}:
     display3:
       text: "{players[2].score:d}"
+      action: no_flash
       key: scores
       color: black
-      #priority: 100
-  player_score{player_num==4}:
+  player_score{player_num==4 and change>0}:
     display4:
       text: "{players[3].score:d}"
+      action: no_flash
       key: scores
       color: black
-      #priority: 100
+
+  #Flash displays when turns start.
+  player_turn_started{number==1}:
+    display1:
+      text: "{players[0].score:d}"
+      action: flash
+      key: scores
+      color: black
+  player_turn_started{number==2}:
+    display2:
+      text: "{players[1].score:d}"
+      action: flash
+      key: scores
+      color: black
+  player_turn_started{number==3}:
+    display3:
+      text: "{players[2].score:d}"
+      action: flash
+      key: scores
+      color: black
+  player_turn_started{number==4}:
+    display4:
+      text: "{players[3].score:d}"
+      action: flash
+      key: scores
+      color: black

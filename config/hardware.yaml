@@ -14,14 +14,4 @@ psus:
 playfields:
   playfield:
     tags: default
-    default_source_device: bd_drain
-
-flippers:
-  left_flipper:
-    main_coil: c_flipper_left
-    activation_switch: s_left_flipper
-  right_flipper:
-    main_coil: c_flipper_right
-    activation_switch: s_right_flipper
-
-virtual_platform_start_active_switches: s_drain
+    default_source_device: bd_trough

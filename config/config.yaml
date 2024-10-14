@@ -3,6 +3,7 @@
 config:
   - assets.yaml
   - coils.yaml
+  - balldevices.yaml
   - displays.yaml
   - hardware.yaml
   - keyboard.yaml
@@ -12,6 +13,8 @@ config:
   - segmentdisplays.yaml
   - credits.yaml
   - sound.yaml
+  - settings.yaml
+  - variables.yaml
 
 modes:
 # base modules
@@ -22,5 +25,11 @@ modes:
   - service
   - service_dmd
   - credits
+  - high_score
 # game logic
   - pops
+  - multiball
+
+game:
+  balls_per_game: settings.balls_per_game
+  max_players: 4

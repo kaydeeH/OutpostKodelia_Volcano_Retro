@@ -24,7 +24,7 @@ segment_displays:
     number: 1
     default_transition_update_hz: 24
 
-# Screen display version of segment displays & backglass
+# The remainder of this file sets up the screen display version of segment displays w/ backglass
 virtual_segment_display_connector:
   segment_displays: display1, display2, display3, display4, display5
 
@@ -39,7 +39,7 @@ widgets:
       display_type: 7seg
       character_count: 6
       padding: 0
-      character_spacing: 15
+      character_spacing: 10
       segment_width: 0.1
       segment_interval: .02
       segment_off_color: ffffffff
@@ -49,10 +49,10 @@ widgets:
       dot_enabled: false
       comma_enabled: false
       text: "888888"
-      width: 150
+      width: 130
       height: 22
-      x: 245
-      y: 368
+      x: 194
+      y: 453
       z: 200
   display2:
     - type: segment_display_emulator
@@ -60,7 +60,7 @@ widgets:
       display_type: 7seg
       character_count: 6
       padding: 0
-      character_spacing: 15
+      character_spacing: 10
       segment_width: 0.1
       segment_interval: .02
       segment_off_color: ffffffff
@@ -70,10 +70,10 @@ widgets:
       dot_enabled: false
       comma_enabled: false
       text: "888888"
-      width: 150
+      width: 130
       height: 22
-      x: 555
-      y: 368
+      x: 605
+      y: 453
       z: 200
   display3:
     - type: segment_display_emulator
@@ -81,7 +81,7 @@ widgets:
       display_type: 7seg
       character_count: 6
       padding: 0
-      character_spacing: 15
+      character_spacing: 10
       segment_width: 0.1
       segment_interval: .02
       segment_off_color: ffffffff
@@ -91,10 +91,10 @@ widgets:
       dot_enabled: false
       comma_enabled: false
       text: "888888"
-      width: 150
+      width: 130
       height: 22
-      x: 245
-      y: 98
+      x: 194
+      y: 325
       z: 200
   display4:
     - type: segment_display_emulator
@@ -102,7 +102,7 @@ widgets:
       display_type: 7seg
       character_count: 6
       padding: 0
-      character_spacing: 15
+      character_spacing: 10
       segment_width: 0.1
       segment_interval: .02
       segment_off_color: ffffffff
@@ -112,10 +112,10 @@ widgets:
       dot_enabled: false
       comma_enabled: false
       text: "888888"
-      width: 150
+      width: 130
       height: 22
-      x: 553
-      y: 99
+      x: 605
+      y: 325
       z: 200
   display5:
     - type: segment_display_emulator
@@ -123,7 +123,7 @@ widgets:
       display_type: 7seg
       character_count: 4
       padding: 0
-      character_spacing: 1
+      character_spacing: 7
       segment_width: 0.1
       segment_interval: .02
       segment_off_color: ffffffff
@@ -133,10 +133,10 @@ widgets:
       dot_enabled: false
       comma_enabled: false
       text: "8888"
-      width: 12
-      height: 12
-      x: 422.5
-      y: 262.5
+      width: 68
+      height: 22
+      x: 400
+      y: 183
       z: 200
 
 slides:

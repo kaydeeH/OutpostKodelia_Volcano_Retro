@@ -218,70 +218,70 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
-  l_bonus_1:
+  l_bonus_1k:
     start_channel: 1-0-31
     subtype: led
     type: w
     fade_ms: 50ms
     platform_settings:
       polarity: true
-  l_bonus_2:
+  l_bonus_2k:
     start_channel: 1-0-32
     subtype: led
     type: w
     fade_ms: 50ms
     platform_settings:
       polarity: true
-  l_bonus_3:
+  l_bonus_3k:
     start_channel: 1-0-33
     subtype: led
     type: w
     fade_ms: 50ms
     platform_settings:
       polarity: true
-  l_bonus_4:
+  l_bonus_4k:
     start_channel: 1-0-34
     subtype: led
     type: w
     fade_ms: 50ms
     platform_settings:
       polarity: true
-  l_bonus_5:
+  l_bonus_5k:
     start_channel: 1-0-35
     subtype: led
     type: w
     fade_ms: 50ms
     platform_settings:
       polarity: true
-  l_bonus_6:
+  l_bonus_6k:
     start_channel: 1-0-36
     subtype: led
     type: w
     fade_ms: 50ms
     platform_settings:
       polarity: true
-  l_bonus_7:
+  l_bonus_7k:
     start_channel: 1-0-37
     subtype: led
     type: w
     fade_ms: 50ms
     platform_settings:
       polarity: true
-  l_bonus_8:
+  l_bonus_8k:
     start_channel: 1-0-38
     subtype: led
     type: w
     fade_ms: 50ms
     platform_settings:
       polarity: true
-  l_bonus_9:
+  l_bonus_9k:
     start_channel: 1-0-39
     subtype: led
     type: w
     fade_ms: 50ms
     platform_settings:
       polarity: true
-  l_bonus_10:
+  l_bonus_10k:
     start_channel: 1-0-40
     subtype: led
     type: w

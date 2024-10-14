@@ -15,13 +15,15 @@ shots:
     switch: s_pop_lower_right
 
 variable_player:
-  pop_upper_hit:
+  pop_upper_hit{settings.balls_per_game==3}:
     score: 1000
-  pop_mid_hit:
+  pop_upper_hit{settings.balls_per_game==5}:
+    score: 100
+  pop_mid_hit{settings.balls_per_game==3}:
     score: 1000
+  pop_mid_hit{settings.balls_per_game==5}:
+    score: 100
   pop_lower_left_hit:
     score: 100
   pop_lower_right_hit:
     score: 100
-
-

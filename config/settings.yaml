@@ -1,0 +1,13 @@
+#config_version=6
+
+settings:
+# STANDARD SETTINGS
+  balls_per_game:
+    label: Balls Per Game
+    values:
+      3: "3 (default)"
+      5: "5"
+    default: 3
+    key_type: int
+    sort: 100
+    settingType: standard

@@ -1,0 +1,23 @@
+#config_version=6
+mode:
+  start_events: ball_started
+  priority: 1000
+
+#TODO This still needs a lot of work to ensure ball-to-ball and player-to-player behaviors work as desired. Right now
+#TODO it does not. It's pretty easy to end up with surprise extra balls on the playfield that just don't exist.
+multiball_locks:
+  volcano_lock:
+    balls_to_lock: 3
+    lock_devices: bd_subway
+    balls_to_replace: 2
+    disable_events: pop_mid_hit
+    locked_ball_counting_strategy: physical_only
+
+multiballs:
+  v_mb:
+    ball_count: 3
+    ball_count_type: total
+    shoot_again: 0s
+    ball_locks: bd_subway
+    replace_balls_in_play: true
+    start_events: multiball_lock_volcano_lock_full

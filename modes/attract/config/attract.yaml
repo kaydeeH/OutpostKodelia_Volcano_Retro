@@ -4,6 +4,7 @@ event_player:
   mode_attract_started:
     - init_done
 
+#Toggle between last game scores and high score during attract.
 timers:
   display_loop_timer:
     start_value: 0
@@ -18,7 +19,7 @@ timers:
         event: mode_attract_will_stop
 
 segment_display_player:
-  timer_display_loop_timer_tick{ticks==0}:
+  timer_display_loop_timer_tick{ticks==2}:
     display1:
       text: "{(machine.player1_score):d}"
       color: black
@@ -36,10 +37,10 @@ segment_display_player:
       color: black
       key: attr
     display5:
-      text: "0000"
+      text: "{(machine.credits_whole_num):d}  "
       color: black
       key: attr
-  timer_display_loop_timer_tick{ticks==3}:
+  timer_display_loop_timer_tick{ticks==5}:
     display1:
       text: "HIGH"
       color: black
@@ -49,14 +50,17 @@ segment_display_player:
       color: black
       key: attr
     display3:
-      text: "------"
+      text: ""
       color: black
       key: attr
     display4:
-      text: "999999"
+      text: "{(machine.score1_value):d}"
       color: black
       key: attr
     display5:
-      text: "0000"
+      text: "{(machine.credits_whole_num):d}  "
       color: black
       key: attr
+
+show_player:
+  init_done: attract_bonus_show

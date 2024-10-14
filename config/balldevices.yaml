@@ -1,0 +1,30 @@
+#config_version=6
+
+ball_devices:
+  bd_drain:
+    ball_switches: s_drain
+    eject_coil: c_drain_eject
+    tags: drain, trough
+    eject_timeouts: 3s
+    eject_targets: bd_trough
+  bd_trough:
+    ball_switches: s_trough_left, s_trough_right
+    eject_coil: c_trough_release
+    eject_targets: bd_plunger
+    tags: home, trough
+    eject_timeouts: 3s
+    request_ball_events: balldevice_bd_trough_ball_eject_success
+  #TODO For bd_plunger to work we'll need to add a ball detection switch to the shooter lane.
+  bd_plunger:
+    ball_switches: s_plunger
+    mechanical_eject: true
+    eject_targets: playfield
+  bd_subway:
+    #TODO Volcano only has two switches here. May need to find a way to add a third for this to behave properly.
+    ball_switches: s_subway_1, s_subway_2, s_subway_3
+    eject_coil: c_subway_eject
+    eject_targets: playfield
+    eject_timeouts: 2s
+    captures_from: playfield
+
+virtual_platform_start_active_switches: s_drain, s_trough_left, s_trough_right
