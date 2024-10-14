@@ -29,6 +29,11 @@ switches:
     tags: right_flipper
   s_flipper_right_eos:
     number:
+  s_flipper_right_upper:
+    number:
+    tags: right_flipper
+  s_flipper_right_upper_eos:
+    number:
   s_drain:
     number:
   s_trough_left:
@@ -57,4 +62,58 @@ switches:
   s_subway_2:
     number:
   s_subway_3:
+    number:
+  s_firepit_kicker:
+    number:
+  s_spinner:
+    number:
+  s_top_saucer:
+    number:
+  s_kicking_target:
+    number:
+  s_left_targets_1:
+    number:
+  s_left_targets_2:
+    number:
+  s_left_targets_3:
+    number:
+  s_left_targets_4:
+    number:
+  s_left_targets_5:
+    number:
+  s_right_targets_1:
+    number:
+  s_right_targets_2:
+    number:
+  s_right_targets_3:
+    number:
+  s_right_targets_4:
+    number:
+  s_right_targets_5:
+    number:
+  s_crater_1:
+    number:
+  s_crater_2:
+    number:
+  s_crater_3:
+    number:
+  s_crater_4:
+    number:
+  s_10pt_top:
+    number:
+  s_10pt_left_targets:
+    number:
+  s_10pt_right_targets:
+    number:
+  s_10pt_left_upper:
+    number:
+  s_10pt_left_mid:
+    number:
+  s_spot_target:
+    number:
+  s_outlane_right:
+    number:
+  s_outlane_left:
+    number:
+  s_return_left:
     number:

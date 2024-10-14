@@ -17,6 +17,14 @@ coils:
     number:
     allow_enable: true
     default_pulse_ms: 20
+  c_flipper_right_upper_power:
+    number:
+    allow_enable: true
+    default_pulse_ms: 20
+  c_flipper_right_upper_hold:
+    number:
+    allow_enable: true
+    default_pulse_ms: 20
   c_drain_eject:
     number: 2
     default_pulse_ms: 20
@@ -34,7 +42,23 @@ coils:
     number: 10
   c_slingshot_right:
     number: 11
+  c_subway_release:
+    number:
   c_subway_eject:
+    number:
+  c_firepit_kicker:
+    number:
+  c_top_saucer:
+    number:
+  c_kicking_target:
+    number:
+  c_left_targets_reset:
+    number:
+  c_right_targets_reset:
+    number:
+  c_motor_relay:
+    number:
+  c_right_gate:
     number:
 
 autofire_coils:
@@ -56,6 +80,9 @@ autofire_coils:
   pop_lower_right:
     coil: c_pop_lower_right
     switch: s_pop_lower_right
+  kicking_target:
+    coil: c_kicking_target
+    switch: s_kicking_target
 
 flippers:
   flipper_left:
@@ -69,4 +96,10 @@ flippers:
     hold_coil: c_flipper_right_hold
     activation_switch: s_flipper_right
     eos_switch: s_flipper_right_eos
+    repulse_on_eos_open: true
+  flipper_right_upper:
+    main_coil: c_flipper_right_upper_power
+    hold_coil: c_flipper_right_upper_hold
+    activation_switch: s_flipper_right_upper
+    eos_switch: s_flipper_right_upper_eos
     repulse_on_eos_open: true

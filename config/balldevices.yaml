@@ -20,11 +20,26 @@ ball_devices:
     mechanical_eject: true
     eject_targets: playfield
   bd_subway:
-    #TODO Volcano only has two switches here. May need to find a way to add a third for this to behave properly.
-    ball_switches: s_subway_1, s_subway_2, s_subway_3
+    #TODO Volcano only has one switch here. May need to find a way to add a second for this to behave properly.
+    #TODO So for now, I've just added the extra switch.
+    ball_switches: s_subway_1, s_subway_2
     eject_coil: c_subway_eject
     eject_targets: playfield
     eject_timeouts: 2s
+  bd_subway_pre:
+    ball_switches: s_subway_3
+    eject_coil: c_subway_release
+    eject_targets: bd_subway
+    captures_from: playfield
+  bd_firepit:
+    ball_switches: s_firepit_kicker
+    eject_coil: c_firepit_kicker
+    eject_targets: playfield
+    captures_from: playfield
+  bd_top_saucer:
+    ball_switches: s_top_saucer
+    eject_coil: c_top_saucer
+    eject_targets: playfield
     captures_from: playfield
 
 virtual_platform_start_active_switches: s_drain, s_trough_left, s_trough_right

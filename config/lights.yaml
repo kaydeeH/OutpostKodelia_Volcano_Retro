@@ -309,15 +309,22 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
-  l_gate_open:
+  l_ball_save_3:
     start_channel: 1-0-44
     subtype: led
     type: w
     fade_ms: 50ms
     platform_settings:
       polarity: true
-  l_shooter:
+  l_gate_open:
     start_channel: 1-0-45
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_shooter:
+    start_channel: 1-0-46
     subtype: led
     type: w
     fade_ms: 50ms

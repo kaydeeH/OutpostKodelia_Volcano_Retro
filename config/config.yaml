@@ -15,6 +15,7 @@ config:
   - sound.yaml
   - settings.yaml
   - variables.yaml
+  - droptargets.yaml
 
 modes:
 # base modules

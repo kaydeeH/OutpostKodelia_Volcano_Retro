@@ -5,12 +5,20 @@ mode:
 
 #TODO This still needs a lot of work to ensure ball-to-ball and player-to-player behaviors work as desired. Right now
 #TODO it does not. It's pretty easy to end up with surprise extra balls on the playfield that just don't exist.
+#TODO May require a state machine of some sort to enable/disable all of this properly, and track player-to-player.
+#TODO Should probably try to confirm exactly how the original handled this, then decide whether to replicate or enhance.
 multiball_locks:
+  volcano_prelock:
+    balls_to_lock: 2
+    lock_devices: bd_subway_pre
+    balls_to_replace: 1
+    #disable_events: pop_mid_hit
+    locked_ball_counting_strategy: physical_only
   volcano_lock:
-    balls_to_lock: 3
+    balls_to_lock: 1
     lock_devices: bd_subway
-    balls_to_replace: 2
-    disable_events: pop_mid_hit
+    balls_to_replace: 1
+    #disable_events: pop_mid_hit
     locked_ball_counting_strategy: physical_only
 
 multiballs:
@@ -18,6 +26,6 @@ multiballs:
     ball_count: 3
     ball_count_type: total
     shoot_again: 0s
-    ball_locks: bd_subway
+    ball_locks: bd_subway, bd_subway_pre
     replace_balls_in_play: true
     start_events: multiball_lock_volcano_lock_full

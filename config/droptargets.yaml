@@ -1,0 +1,43 @@
+#config_version=6
+
+drop_targets:
+  d_left_targets_1:
+    switch: s_left_targets_1
+    reset_coil: c_left_targets_reset
+  d_left_targets_2:
+    switch: s_left_targets_2
+    reset_coil: c_left_targets_reset
+  d_left_targets_3:
+    switch: s_left_targets_3
+    reset_coil: c_left_targets_reset
+  d_left_targets_4:
+    switch: s_left_targets_4
+    reset_coil: c_left_targets_reset
+  d_left_targets_5:
+    switch: s_left_targets_5
+    reset_coil: c_left_targets_reset
+  d_right_targets_1:
+    switch: s_right_targets_1
+    reset_coil: c_right_targets_reset
+  d_right_targets_2:
+    switch: s_right_targets_2
+    reset_coil: c_right_targets_reset
+  d_right_targets_3:
+    switch: s_right_targets_3
+    reset_coil: c_right_targets_reset
+  d_right_targets_4:
+    switch: s_right_targets_4
+    reset_coil: c_right_targets_reset
+  d_right_targets_5:
+    switch: s_right_targets_5
+    reset_coil: c_right_targets_reset
+
+drop_target_banks:
+  db_left_targets:
+    drop_targets: d_left_targets_1, d_left_targets_3, d_left_targets_3, d_left_targets_4, d_left_targets_5
+    reset_coils: c_left_targets_reset
+    reset_on_complete: 500ms
+  db_right_targets:
+    drop_targets: d_right_targets_1, d_right_targets_3, d_right_targets_3, d_right_targets_4, d_right_targets_5
+    reset_coils: c_right_targets_reset
+    reset_on_complete: 500ms
