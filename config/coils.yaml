@@ -100,6 +100,6 @@ flippers:
   flipper_right_upper:
     main_coil: c_flipper_right_upper_power
     hold_coil: c_flipper_right_upper_hold
-    activation_switch: s_flipper_right_upper
+    activation_switch: s_flipper_right
     eos_switch: s_flipper_right_upper_eos
     repulse_on_eos_open: true

@@ -29,9 +29,6 @@ switches:
     tags: right_flipper
   s_flipper_right_eos:
     number:
-  s_flipper_right_upper:
-    number:
-    tags: right_flipper
   s_flipper_right_upper_eos:
     number:
   s_drain:
@@ -116,4 +113,6 @@ switches:
   s_outlane_left:
     number:
   s_return_left:
+    number:
+  s_rollunder:
     number:
