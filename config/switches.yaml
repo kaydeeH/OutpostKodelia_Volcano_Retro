@@ -116,3 +116,5 @@ switches:
     number:
   s_rollunder:
     number:
+  s_freeze:
+    number:

@@ -1,5 +1,8 @@
 #config_version=6
 
+light_settings:
+  default_fade_ms: 50
+
 lights:
   l_special:
     start_channel: 1-0-0
