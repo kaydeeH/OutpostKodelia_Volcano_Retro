@@ -7,3 +7,18 @@ player_vars:
   freeze_index:
     value_type: int
     initial_value: 0
+  crater_1_scored:
+    value_type: int
+    initial_value: 0
+  crater_2_scored:
+    value_type: int
+    initial_value: 0
+  crater_3_scored:
+    value_type: int
+    initial_value: 0
+  crater_4_scored:
+    value_type: int
+    initial_value: 0
+  playfield_multiplier:
+    value_type: int
+    initial_value: 1

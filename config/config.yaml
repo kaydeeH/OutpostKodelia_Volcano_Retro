@@ -32,6 +32,7 @@ modes:
   - multiball
   - basedrops
   - backboxplumes
+  - basecraters
 
 game:
   balls_per_game: settings.balls_per_game

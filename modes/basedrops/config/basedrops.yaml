@@ -86,8 +86,6 @@ shot_profiles:
 shots:
   drops_freeze:
     switch: s_freeze
-  10pt_standing:
-    switch: s_10pt_top, s_10pt_left_targets, s_10pt_right_targets, s_10pt_left_upper, s_10pt_left_mid
   left_targets_1:
     switch: s_left_targets_1
     profile: target_shot_profile_100

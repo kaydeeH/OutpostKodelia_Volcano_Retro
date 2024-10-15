@@ -1,0 +1,123 @@
+#config_version=6
+
+mode:
+  start_events: mode_base_started
+  priority: 100
+  events_when_started: craters_setup
+
+event_player:
+  craters_setup:
+    continue_craters
+#  drops_freeze_hit:
+#    - freeze_craters
+#    - show_frozen_target|100ms
+  playfield_active:
+    continue_craters|1s
+
+timers:
+  craters_timer:
+    start_value: 0
+    end_value: 5
+    tick_interval: 200ms
+    direction: up
+    control_events:
+      - action: start
+        event: continue_craters
+      - action: stop
+        event: temp_freeze_craters
+    restart_on_complete: true
+
+shot_profiles:
+  crater_shot_profile:
+    advance_on_hit: false
+    states:
+      - name: unlit
+      - name: lit
+
+shots:
+  10pt_standing:
+    switch: s_10pt_top, s_10pt_left_targets, s_10pt_right_targets, s_10pt_left_upper, s_10pt_left_mid
+  crater_1:
+    switch: s_crater_1
+    profile: crater_shot_profile
+
+variable_player:
+  crater_1_hit:
+    score: 1000
+    crater_1_scored:
+      int: 1
+      action: set
+  crater_2_hit:
+    score: 1000
+    crater_2_scored:
+      int: 1
+      action: set
+  crater_3_hit:
+    score: 1000
+    crater_3_scored:
+      int: 1
+      action: set
+  crater_4_hit:
+    score: 1000
+    crater_4_scored:
+      int: 1
+      action: set
+
+show_player:
+  timer_craters_timer_tick{ticks==0}:
+    crater_4:
+      loops: 1
+  timer_craters_timer_tick{ticks==1}:
+    crater_3:
+      loops: 1
+  timer_craters_timer_tick{ticks==2}:
+    crater_2:
+      loops: 1
+  timer_craters_timer_tick{ticks==3}:
+    crater_1:
+      loops: 1
+  timer_craters_timer_tick{ticks==4}:
+    craters_off:
+      loops: 1
+  continue_craters:
+    crater_1:
+      action: stop
+    crater_2:
+      action: stop
+    crater_3:
+      action: stop
+    crater_4:
+      action: stop
+    craters_off:
+      action: stop
+
+shows:
+  crater_1:
+    - duration: 150ms
+      lights:
+        l_crater_1: white
+        l_crater_2: white
+        l_crater_3: white
+        l_crater_4: white
+  crater_2:
+    - duration: 150ms
+      lights:
+        l_crater_2: white
+        l_crater_3: white
+        l_crater_4: white
+  crater_3:
+    - duration: 150ms
+      lights:
+        l_crater_3: white
+        l_crater_4: white
+  crater_4:
+    - duration: 150ms
+      lights:
+        l_crater_4: white
+  craters_off:
+    - duration: 150ms
+      lights:
+        l_crater_1: off
+        l_crater_2: off
+        l_crater_3: off
+        l_crater_4: off
