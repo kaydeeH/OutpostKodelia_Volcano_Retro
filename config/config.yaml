@@ -30,6 +30,7 @@ modes:
 # game logic
   - pops
   - multiball
+  - basedrops
 
 game:
   balls_per_game: settings.balls_per_game
