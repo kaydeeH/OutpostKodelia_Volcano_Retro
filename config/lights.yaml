@@ -333,3 +333,173 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
+
+#Lights for the backbox
+  l_bb_left_plume_1:
+    start_channel: 1-1-01
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bb_left_plume_2:
+    start_channel: 1-1-02
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bb_left_plume_3:
+    start_channel: 1-1-03
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bb_left_plume_4:
+    start_channel: 1-1-04
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bb_left_plume_5:
+    start_channel: 1-1-05
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bb_left_plume_6:
+    start_channel: 1-1-06
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bb_left_plume_7:
+    start_channel: 1-1-07
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bb_left_plume_8:
+    start_channel: 1-1-08
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bb_left_plume_9:
+    start_channel: 1-1-09
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bb_left_plume_10:
+    start_channel: 1-1-10
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bb_right_plume_1:
+    start_channel: 1-1-11
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bb_right_plume_2:
+    start_channel: 1-1-12
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bb_right_plume_3:
+    start_channel: 1-1-13
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bb_right_plume_4:
+    start_channel: 1-1-14
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bb_right_plume_5:
+    start_channel: 1-1-15
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bb_right_plume_6:
+    start_channel: 1-1-16
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bb_right_plume_7:
+    start_channel: 1-1-17
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bb_right_plume_8:
+    start_channel: 1-1-18
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bb_right_plume_9:
+    start_channel: 1-1-19
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bb_right_plume_10:
+    start_channel: 1-1-20
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bb_high_score:
+    start_channel: 1-1-21
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bb_game_over:
+    start_channel: 1-1-22
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bb_shoot_again:
+    start_channel: 1-1-23
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bb_tilt:
+    start_channel: 1-1-24
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true

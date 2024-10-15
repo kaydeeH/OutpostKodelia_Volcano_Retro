@@ -1,0 +1,54 @@
+#show_version=6
+
+- duration: 1000ms
+  lights:
+    l_left_targets_1: off
+    l_left_targets_2: off
+    l_left_targets_3: off
+    l_left_targets_4: off
+    l_left_targets_5: off
+    l_right_targets_1: off
+    l_right_targets_2: off
+    l_right_targets_3: off
+    l_right_targets_4: off
+    l_right_targets_5: off
+- duration: 200ms
+  lights:
+    l_left_targets_1: yellow
+    l_right_targets_1: yellow
+- duration: 200ms
+  lights:
+    l_left_targets_2: yellow
+    l_right_targets_2: yellow
+- duration: 200ms
+  lights:
+    l_left_targets_3: yellow
+    l_right_targets_3: yellow
+- duration: 200ms
+  lights:
+    l_left_targets_4: yellow
+    l_right_targets_4: yellow
+- duration: 200ms
+  lights:
+    l_left_targets_5: yellow
+    l_right_targets_5: yellow
+- duration: 200ms
+  lights:
+    l_left_targets_1: off
+    l_right_targets_1: off
+- duration: 200ms
+  lights:
+    l_left_targets_2: off
+    l_right_targets_2: off
+- duration: 200ms
+  lights:
+    l_left_targets_3: off
+    l_right_targets_3: off
+- duration: 200ms
+  lights:
+    l_left_targets_4: off
+    l_right_targets_4: off
+- duration: 200ms
+  lights:
+    l_left_targets_5: off
+    l_right_targets_5: off

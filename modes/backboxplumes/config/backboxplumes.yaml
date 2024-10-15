@@ -1,0 +1,12 @@
+#config_version=6
+
+#This mode manages continuous cycles of the backbox lava lights.
+mode:
+  start_events: reset_complete
+  events_when_started: backboxplumes_init_done
+  priority: 5000
+  game_mode: false
+
+show_player:
+  backboxplumes_init_done:
+    backboxplumes_show

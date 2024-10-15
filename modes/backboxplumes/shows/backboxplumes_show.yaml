@@ -1,0 +1,83 @@
+#show_version=6
+
+- duration: 50ms
+  lights:
+    l_bb_right_plume_10: off
+    l_bb_left_plume_1: white
+- duration: 50ms
+  lights:
+    l_bb_left_plume_1: off
+    l_bb_left_plume_2: white
+- duration: 50ms
+  lights:
+    l_bb_left_plume_2: off
+    l_bb_left_plume_3: white
+- duration: 50ms
+  lights:
+    l_bb_left_plume_3: off
+    l_bb_left_plume_4: white
+- duration: 50ms
+  lights:
+    l_bb_left_plume_4: off
+    l_bb_left_plume_5: red
+- duration: 50ms
+  lights:
+    l_bb_left_plume_5: off
+    l_bb_left_plume_6: red
+- duration: 50ms
+  lights:
+    l_bb_left_plume_6: off
+    l_bb_left_plume_7: red
+- duration: 50ms
+  lights:
+    l_bb_left_plume_7: off
+    l_bb_left_plume_8: red
+- duration: 50ms
+  lights:
+    l_bb_left_plume_8: off
+    l_bb_left_plume_9: red
+- duration: 50ms
+  lights:
+    l_bb_left_plume_9: off
+    l_bb_left_plume_10: red
+
+- duration: 50ms
+  lights:
+    l_bb_left_plume_10: off
+    l_bb_right_plume_1: white
+- duration: 50ms
+  lights:
+    l_bb_right_plume_1: off
+    l_bb_right_plume_2: white
+- duration: 50ms
+  lights:
+    l_bb_right_plume_2: off
+    l_bb_right_plume_3: white
+- duration: 50ms
+  lights:
+    l_bb_right_plume_3: off
+    l_bb_right_plume_4: white
+- duration: 50ms
+  lights:
+    l_bb_right_plume_4: off
+    l_bb_right_plume_5: red
+- duration: 50ms
+  lights:
+    l_bb_right_plume_5: off
+    l_bb_right_plume_6: red
+- duration: 50ms
+  lights:
+    l_bb_right_plume_6: off
+    l_bb_right_plume_7: red
+- duration: 50ms
+  lights:
+    l_bb_right_plume_7: off
+    l_bb_right_plume_8: red
+- duration: 50ms
+  lights:
+    l_bb_right_plume_8: off
+    l_bb_right_plume_9: red
+- duration: 50ms
+  lights:
+    l_bb_right_plume_9: off
+    l_bb_right_plume_10: red

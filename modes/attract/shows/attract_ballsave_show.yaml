@@ -1,0 +1,25 @@
+#show_version=6
+
+- duration: 333ms
+  lights:
+    l_ball_save_1: off
+    l_ball_save_2: off
+    l_ball_save_3: off
+- duration: 333ms
+  lights:
+    l_ball_save_1: green
+- duration: 333ms
+  lights:
+    l_ball_save_2: green
+- duration: 333ms
+  lights:
+    l_ball_save_3: green
+- duration: 333ms
+  lights:
+    l_ball_save_1: off
+- duration: 333ms
+  lights:
+    l_ball_save_2: off
+- duration: 333ms
+  lights:
+    l_ball_save_3: off

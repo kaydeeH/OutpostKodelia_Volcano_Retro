@@ -1,0 +1,25 @@
+#show_version=6
+
+- duration: 333ms
+  lights:
+    l_lava_mult_2: off
+    l_lava_mult_3: off
+    l_lava_mult_4: off
+- duration: 333ms
+  lights:
+    l_lava_mult_2: red
+- duration: 333ms
+  lights:
+    l_lava_mult_3: red
+- duration: 333ms
+  lights:
+    l_lava_mult_4: red
+- duration: 333ms
+  lights:
+    l_lava_mult_2: off
+- duration: 333ms
+  lights:
+    l_lava_mult_3: off
+- duration: 333ms
+  lights:
+    l_lava_mult_4: off

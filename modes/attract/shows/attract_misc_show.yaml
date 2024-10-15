@@ -1,0 +1,28 @@
+#show_version=6
+
+- duration: 500ms
+  lights:
+    l_extra_ball: off
+    l_special: off
+    l_spinner_1k: orange
+    l_collect_seismic: orange
+    l_shoot_again: red
+    l_gate_open: green
+    l_shooter: off
+    l_open_gate: green
+    l_craters_capture: off
+    l_left_targets_1k: white
+    l_right_targets_1k: off
+- duration: 500ms
+  lights:
+    l_extra_ball: red
+    l_special: red
+    l_spinner_1k: off
+    l_collect_seismic: off
+    l_shoot_again: off
+    l_gate_open: off
+    l_shooter: yellow
+    l_open_gate: off
+    l_craters_capture: orange
+    l_left_targets_1k: off
+    l_right_targets_1k: white

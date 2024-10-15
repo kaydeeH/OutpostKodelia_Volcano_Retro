@@ -63,4 +63,18 @@ segment_display_player:
       key: attr
 
 show_player:
-  init_done: attract_bonus_show
+  init_done: attract_bonus_show, attract_crater_show, attract_ballsave_show, attract_drops_show, attract_lavamult_show, attract_misc_show, game_over_show
+  timer_display_loop_timer_tick{ticks==5}: hstd_show
+  timer_display_loop_timer_tick{ticks==2}:
+    hstd_show:
+      action: stop
+
+shows:
+  hstd_show:
+    - duration: 3s
+      lights:
+        l_bb_high_score: white
+  game_over_show:
+    - duration: 1s
+      lights:
+        l_bb_game_over: white

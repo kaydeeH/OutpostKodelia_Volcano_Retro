@@ -1,0 +1,32 @@
+#show_version=6
+
+- duration: 200ms
+  lights:
+    l_crater_1: off
+    l_crater_2: off
+    l_crater_3: off
+    l_crater_4: off
+- duration: 200ms
+  lights:
+    l_crater_4: red
+- duration: 200ms
+  lights:
+    l_crater_3: red
+- duration: 200ms
+  lights:
+    l_crater_2: red
+- duration: 200ms
+  lights:
+    l_crater_1: red
+- duration: 200ms
+  lights:
+    l_crater_4: off
+- duration: 200ms
+  lights:
+    l_crater_3: off
+- duration: 200ms
+  lights:
+    l_crater_2: off
+- duration: 200ms
+  lights:
+    l_crater_1: off
