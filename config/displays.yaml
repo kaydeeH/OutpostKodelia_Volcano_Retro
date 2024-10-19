@@ -10,8 +10,8 @@ window:
   width: 800
   height: 480
   title: Volcano
-  resizable: false
-  borderless: true
+  resizable: true
+  borderless: false
   fullscreen: false
   exit_on_escape: true
   source_display: window

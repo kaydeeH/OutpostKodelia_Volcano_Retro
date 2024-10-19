@@ -4,3 +4,15 @@ mode:
   start_events: ball_started
   priority: 100
   events_when_started: base_setup
+
+variable_player:
+  10pt_standing_hit:
+    score: 10 * current_player.playfield_multiplier
+
+shots:
+  10pt_standing:
+    switch: s_10pt_top, s_10pt_left_targets, s_10pt_right_targets, s_10pt_left_upper, s_10pt_left_mid
+  freeze:
+    switch: s_freeze
+    mark_playfield_active: false
+    disable_events: playfield_active

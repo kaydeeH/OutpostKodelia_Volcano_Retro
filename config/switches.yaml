@@ -64,6 +64,7 @@ switches:
     number:
   s_spinner:
     number:
+    tags: playfield_active
   s_top_saucer:
     number:
   s_kicking_target:
@@ -90,31 +91,45 @@ switches:
     number:
   s_crater_1:
     number:
+    tags: playfield_active
   s_crater_2:
     number:
+    tags: playfield_active
   s_crater_3:
     number:
+    tags: playfield_active
   s_crater_4:
     number:
+    tags: playfield_active
   s_10pt_top:
     number:
+    tags: playfield_active
   s_10pt_left_targets:
     number:
+    tags: playfield_active
   s_10pt_right_targets:
     number:
+    tags: playfield_active
   s_10pt_left_upper:
     number:
+    tags: playfield_active
   s_10pt_left_mid:
     number:
+    tags: playfield_active
   s_spot_target:
     number:
+    tags: playfield_active
   s_outlane_right:
     number:
+    tags: playfield_active
   s_outlane_left:
     number:
+    tags: playfield_active
   s_return_left:
     number:
+    tags: playfield_active
   s_rollunder:
     number:
+    tags: playfield_active
   s_freeze:
     number:

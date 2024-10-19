@@ -48,9 +48,13 @@ event_player:
     temp_freeze_targets
   right_targets_5k_target_shot_profile_1000_5000pts_hit:
     temp_freeze_targets
+  freeze_hit:
+    - freeze_targets
+    - show_frozen_target|100ms
   drops_freeze_hit:
     - freeze_targets
     - show_frozen_target|100ms
+    - continue_drops|2s
   temp_freeze_targets:
     continue_drops|1s
   playfield_active:
@@ -86,6 +90,9 @@ shot_profiles:
 shots:
   drops_freeze:
     switch: s_freeze
+    mark_playfield_active: false
+    enable_events: playfield_active
+    disable_events: drops_setup
   left_targets_1:
     switch: s_left_targets_1
     profile: target_shot_profile_100
@@ -268,106 +275,104 @@ shots:
     enable_events: drop_target_bank_db_right_targets_down
 
 variable_player:
-  10pt_standing_hit:
-    score: 10
   left_targets_1_target_shot_profile_100_100pts_hit:
-    score: 100
+    score: 100 * current_player.playfield_multiplier
   left_targets_1k_target_shot_profile_1000_1000pts_hit:
-    score: 1000
+    score: 1000 * current_player.playfield_multiplier
   left_targets_1_target_shot_profile_100_5000pts_hit:
-    score: 5000
+    score: 5000 * current_player.playfield_multiplier
   left_targets_1k_target_shot_profile_1000_5000pts_hit:
-    score: 5000
+    score: 5000 * current_player.playfield_multiplier
   left_targets_2_target_shot_profile_100_100pts_hit:
-    score: 100
+    score: 100 * current_player.playfield_multiplier
   left_targets_2k_target_shot_profile_1000_1000pts_hit:
-    score: 1000
+    score: 1000 * current_player.playfield_multiplier
   left_targets_2_target_shot_profile_100_5000pts_hit:
-    score: 5000
+    score: 5000 * current_player.playfield_multiplier
   left_targets_2k_target_shot_profile_1000_5000pts_hit:
-    score: 5000
+    score: 5000 * current_player.playfield_multiplier
   left_targets_3_target_shot_profile_100_100pts_hit:
-    score: 100
+    score: 100 * current_player.playfield_multiplier
   left_targets_3k_target_shot_profile_1000_1000pts_hit:
-    score: 1000
+    score: 1000 * current_player.playfield_multiplier
   left_targets_3_target_shot_profile_100_5000pts_hit:
-    score: 5000
+    score: 5000 * current_player.playfield_multiplier
   left_targets_3k_target_shot_profile_1000_5000pts_hit:
-    score: 5000
+    score: 5000 * current_player.playfield_multiplier
   left_targets_4_target_shot_profile_100_100pts_hit:
-    score: 100
+    score: 100 * current_player.playfield_multiplier
   left_targets_4k_target_shot_profile_1000_1000pts_hit:
-    score: 1000
+    score: 1000 * current_player.playfield_multiplier
   left_targets_4_target_shot_profile_100_5000pts_hit:
-    score: 5000
+    score: 5000 * current_player.playfield_multiplier
   left_targets_4k_target_shot_profile_1000_5000pts_hit:
-    score: 5000
+    score: 5000 * current_player.playfield_multiplier
   left_targets_5_target_shot_profile_100_100pts_hit:
-    score: 100
+    score: 100 * current_player.playfield_multiplier
   left_targets_5k_target_shot_profile_1000_1000pts_hit:
-    score: 1000
+    score: 1000 * current_player.playfield_multiplier
   left_targets_5_target_shot_profile_100_5000pts_hit:
-    score: 5000
+    score: 5000 * current_player.playfield_multiplier
   left_targets_5k_target_shot_profile_1000_5000pts_hit:
-    score: 5000
+    score: 5000 * current_player.playfield_multiplier
   right_targets_1_target_shot_profile_100_100pts_hit:
-    score: 100
+    score: 100 * current_player.playfield_multiplier
   right_targets_1k_target_shot_profile_1000_1000pts_hit:
-    score: 1000
+    score: 1000 * current_player.playfield_multiplier
   right_targets_1_target_shot_profile_100_5000pts_hit:
-    score: 5000
+    score: 5000 * current_player.playfield_multiplier
   right_targets_1k_target_shot_profile_1000_5000pts_hit:
-    score: 5000
+    score: 5000 * current_player.playfield_multiplier
   right_targets_2_target_shot_profile_100_100pts_hit:
-    score: 100
+    score: 100 * current_player.playfield_multiplier
   right_targets_2k_target_shot_profile_1000_1000pts_hit:
-    score: 1000
+    score: 1000 * current_player.playfield_multiplier
   right_targets_2_target_shot_profile_100_5000pts_hit:
-    score: 5000
+    score: 5000 * current_player.playfield_multiplier
   right_targets_2k_target_shot_profile_1000_5000pts_hit:
-    score: 5000
+    score: 5000 * current_player.playfield_multiplier
   right_targets_3_target_shot_profile_100_100pts_hit:
-    score: 100
+    score: 100 * current_player.playfield_multiplier
   right_targets_3k_target_shot_profile_1000_1000pts_hit:
-    score: 1000
+    score: 1000 * current_player.playfield_multiplier
   right_targets_3_target_shot_profile_100_5000pts_hit:
-    score: 5000
+    score: 5000 * current_player.playfield_multiplier
   right_targets_3k_target_shot_profile_1000_5000pts_hit:
-    score: 5000
+    score: 5000 * current_player.playfield_multiplier
   right_targets_4_target_shot_profile_100_100pts_hit:
-    score: 100
+    score: 100 * current_player.playfield_multiplier
   right_targets_4k_target_shot_profile_1000_1000pts_hit:
-    score: 1000
+    score: 1000 * current_player.playfield_multiplier
   right_targets_4_target_shot_profile_100_5000pts_hit:
-    score: 5000
+    score: 5000 * current_player.playfield_multiplier
   right_targets_4k_target_shot_profile_1000_5000pts_hit:
-    score: 5000
+    score: 5000 * current_player.playfield_multiplier
   right_targets_5_target_shot_profile_100_100pts_hit:
-    score: 100
+    score: 100 * current_player.playfield_multiplier
   right_targets_5k_target_shot_profile_1000_1000pts_hit:
-    score: 1000
+    score: 1000 * current_player.playfield_multiplier
   right_targets_5_target_shot_profile_100_5000pts_hit:
-    score: 5000
+    score: 5000 * current_player.playfield_multiplier
   right_targets_5k_target_shot_profile_1000_5000pts_hit:
-    score: 5000
+    score: 5000 * current_player.playfield_multiplier
   player_basedrops_drops_timer_tick{value==0}:
-    freeze_index:
+    targets_freeze_index:
       int: 1
       action: set
   player_basedrops_drops_timer_tick{value==1}:
-    freeze_index:
+    targets_freeze_index:
       int: 2
       action: set
   player_basedrops_drops_timer_tick{value==2}:
-    freeze_index:
+    targets_freeze_index:
       int: 3
       action: set
   player_basedrops_drops_timer_tick{value==3}:
-    freeze_index:
+    targets_freeze_index:
       int: 4
       action: set
   player_basedrops_drops_timer_tick{value==4}:
-    freeze_index:
+    targets_freeze_index:
       int: 5
       action: set
 
@@ -463,27 +468,27 @@ show_player:
   drop_target_bank_db_right_targets_down:
     right_targets_1000:
       loops: -1
-  show_frozen_target{current_player.freeze_index==1}:
+  show_frozen_target{current_player.targets_freeze_index==1}:
     left_targets_1_hold:
       loops: -1
     right_targets_1_hold:
       loops: -1
-  show_frozen_target{current_player.freeze_index==2}:
+  show_frozen_target{current_player.targets_freeze_index==2}:
     left_targets_2_hold:
       loops: -1
     right_targets_2_hold:
       loops: -1
-  show_frozen_target{current_player.freeze_index==3}:
+  show_frozen_target{current_player.targets_freeze_index==3}:
     left_targets_3_hold:
       loops: -1
     right_targets_3_hold:
       loops: -1
-  show_frozen_target{current_player.freeze_index==4}:
+  show_frozen_target{current_player.targets_freeze_index==4}:
     left_targets_4_hold:
       loops: -1
     right_targets_4_hold:
       loops: -1
-  show_frozen_target{current_player.freeze_index==5}:
+  show_frozen_target{current_player.targets_freeze_index==5}:
     left_targets_5_hold:
       loops: -1
     right_targets_5_hold:

@@ -8,9 +8,15 @@ mode:
 event_player:
   craters_setup:
     continue_craters
-#  drops_freeze_hit:
-#    - freeze_craters
-#    - show_frozen_target|100ms
+  freeze_hit:
+    - freeze_craters
+    - show_frozen_craters|100ms
+  craters_freeze_hit:
+    - freeze_craters
+    - show_frozen_craters|100ms
+    - continue_craters|2s
+  temp_freeze_craters:
+    continue_craters|1s
   playfield_active:
     continue_craters|1s
 
@@ -25,6 +31,8 @@ timers:
         event: continue_craters
       - action: stop
         event: temp_freeze_craters
+      - action: stop
+        event: freeze_craters
     restart_on_complete: true
 
 shot_profiles:
@@ -35,32 +43,60 @@ shot_profiles:
       - name: lit
 
 shots:
-  10pt_standing:
-    switch: s_10pt_top, s_10pt_left_targets, s_10pt_right_targets, s_10pt_left_upper, s_10pt_left_mid
+  craters_freeze:
+    switch: s_freeze
+    mark_playfield_active: false
+    enable_events: playfield_active
+    disable_events: craters_setup
   crater_1:
     switch: s_crater_1
+    profile: crater_shot_profile
+  crater_2:
+    switch: s_crater_2
+    profile: crater_shot_profile
+  crater_3:
+    switch: s_crater_3
+    profile: crater_shot_profile
+  crater_4:
+    switch: s_crater_4
     profile: crater_shot_profile
 
 variable_player:
   crater_1_hit:
-    score: 1000
+    score: 1000 * current_player.playfield_multiplier
     crater_1_scored:
       int: 1
       action: set
   crater_2_hit:
-    score: 1000
+    score: 4000 * current_player.playfield_multiplier
     crater_2_scored:
       int: 1
       action: set
   crater_3_hit:
-    score: 1000
+    score: 9000 * current_player.playfield_multiplier
     crater_3_scored:
       int: 1
       action: set
   crater_4_hit:
-    score: 1000
+    score: 16000 * current_player.playfield_multiplier
     crater_4_scored:
       int: 1
+      action: set
+  timer_craters_timer_tick{ticks==0}:
+    craters_freeze_index:
+      int: 1
+      action: set
+  timer_craters_timer_tick{ticks==1}:
+    craters_freeze_index:
+      int: 2
+      action: set
+  timer_craters_timer_tick{ticks==2}:
+    craters_freeze_index:
+      int: 3
+      action: set
+  timer_craters_timer_tick{ticks==3}:
+    craters_freeze_index:
+      int: 4
       action: set
 
 show_player:
@@ -79,6 +115,22 @@ show_player:
   timer_craters_timer_tick{ticks==4}:
     craters_off:
       loops: 1
+  show_frozen_craters{current_player.craters_freeze_index==1}:
+    crater_4:
+      loops: -1
+      priority: 500
+  show_frozen_craters{current_player.craters_freeze_index==2}:
+    crater_3:
+      loops: -1
+      priority: 500
+  show_frozen_craters{current_player.craters_freeze_index==3}:
+    crater_2:
+      loops: -1
+      priority: 500
+  show_frozen_craters{current_player.craters_freeze_index==4}:
+    crater_1:
+      loops: -1
+      priority: 500
   continue_craters:
     crater_1:
       action: stop

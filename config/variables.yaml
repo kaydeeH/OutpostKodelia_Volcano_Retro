@@ -4,7 +4,10 @@ player_vars:
   initials:
     value_type: str
     initial_value: AAA
-  freeze_index:
+  targets_freeze_index:
+    value_type: int
+    initial_value: 0
+  craters_freeze_index:
     value_type: int
     initial_value: 0
   crater_1_scored:
