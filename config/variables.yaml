@@ -25,3 +25,9 @@ player_vars:
   playfield_multiplier:
     value_type: int
     initial_value: 1
+  bonus_val:
+    value_type: int
+    initial_value: 0
+  bonus_multiplier:
+    value_type: int
+    initial_value: 1

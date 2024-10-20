@@ -27,12 +27,16 @@ modes:
   - service_dmd
   - credits
   - high_score
+  - bonus
 # game logic
   - pops
   - multiball
   - basedrops
   - backboxplumes
   - basecraters
+
+custom_code:
+  - custom_code.bonus_counter.BonusCounter
 
 game:
   balls_per_game: settings.balls_per_game
