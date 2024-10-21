@@ -221,74 +221,84 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
-  l_bonus_1k:
+  l_bonus_01K:
     start_channel: 1-0-31
     subtype: led
     type: w
     fade_ms: 50ms
+    tags: bonus_light, bonus1
     platform_settings:
       polarity: true
-  l_bonus_2k:
+  l_bonus_02K:
     start_channel: 1-0-32
     subtype: led
     type: w
     fade_ms: 50ms
+    tags: bonus_light, bonus2
     platform_settings:
       polarity: true
-  l_bonus_3k:
+  l_bonus_03K:
     start_channel: 1-0-33
     subtype: led
     type: w
     fade_ms: 50ms
+    tags: bonus_light, bonus3
     platform_settings:
       polarity: true
-  l_bonus_4k:
+  l_bonus_04K:
     start_channel: 1-0-34
     subtype: led
     type: w
     fade_ms: 50ms
+    tags: bonus_light, bonus4
     platform_settings:
       polarity: true
-  l_bonus_5k:
+  l_bonus_05K:
     start_channel: 1-0-35
     subtype: led
     type: w
     fade_ms: 50ms
+    tags: bonus_light, bonus5
     platform_settings:
       polarity: true
-  l_bonus_6k:
+  l_bonus_06K:
     start_channel: 1-0-36
     subtype: led
     type: w
     fade_ms: 50ms
+    tags: bonus_light, bonus6
     platform_settings:
       polarity: true
-  l_bonus_7k:
+  l_bonus_07K:
     start_channel: 1-0-37
     subtype: led
     type: w
     fade_ms: 50ms
+    tags: bonus_light, bonus7
     platform_settings:
       polarity: true
-  l_bonus_8k:
+  l_bonus_08K:
     start_channel: 1-0-38
     subtype: led
     type: w
     fade_ms: 50ms
+    tags: bonus_light, bonus8
     platform_settings:
       polarity: true
-  l_bonus_9k:
+  l_bonus_09K:
     start_channel: 1-0-39
     subtype: led
     type: w
     fade_ms: 50ms
+    tags: bonus_light, bonus9
     platform_settings:
       polarity: true
-  l_bonus_10k:
+  l_bonus_10K:
     start_channel: 1-0-40
     subtype: led
     type: w
     fade_ms: 50ms
+    tags: bonus_light, bonus10
     platform_settings:
       polarity: true
   l_shoot_again:

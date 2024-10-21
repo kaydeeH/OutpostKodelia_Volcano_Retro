@@ -2,16 +2,16 @@
 
 - duration: 300ms
   lights:
-    l_bonus_1k: off
-    l_bonus_2k: off
-    l_bonus_3k: off
-    l_bonus_4k: off
-    l_bonus_5k: off
-    l_bonus_6k: off
-    l_bonus_7k: off
-    l_bonus_8k: off
-    l_bonus_9k: off
-    l_bonus_10k: off
+    l_bonus_01K: off
+    l_bonus_02K: off
+    l_bonus_03K: off
+    l_bonus_04K: off
+    l_bonus_05K: off
+    l_bonus_06K: off
+    l_bonus_07K: off
+    l_bonus_08K: off
+    l_bonus_09K: off
+    l_bonus_10K: off
     l_lava_level_1: off
     l_lava_level_2: off
     l_seismic_mult_2: off
@@ -20,34 +20,34 @@
     l_seismic_mult_5: off
 - duration: 150ms
   lights:
-    l_bonus_1k: orange
+    l_bonus_01K: orange
 - duration: 150ms
   lights:
-    l_bonus_2k: orange
+    l_bonus_02K: orange
 - duration: 150ms
   lights:
-    l_bonus_3k: orange
+    l_bonus_03K: orange
 - duration: 150ms
   lights:
-    l_bonus_4k: orange
+    l_bonus_04K: orange
 - duration: 150ms
   lights:
-    l_bonus_5k: orange
+    l_bonus_05K: orange
 - duration: 150ms
   lights:
-    l_bonus_6k: orange
+    l_bonus_06K: orange
 - duration: 150ms
   lights:
-    l_bonus_7k: orange
+    l_bonus_07K: orange
 - duration: 150ms
   lights:
-    l_bonus_8k: orange
+    l_bonus_08K: orange
 - duration: 150ms
   lights:
-    l_bonus_9k: orange
+    l_bonus_09K: orange
 - duration: 150ms
   lights:
-    l_bonus_10k: orange
+    l_bonus_10K: orange
 - duration: 150ms
   lights:
     l_lava_level_1: red

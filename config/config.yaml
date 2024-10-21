@@ -37,6 +37,7 @@ modes:
 
 custom_code:
   - custom_code.bonus_counter.BonusCounter
+  - custom_code.bonus_light_controller.BonusLightController
 
 game:
   balls_per_game: settings.balls_per_game

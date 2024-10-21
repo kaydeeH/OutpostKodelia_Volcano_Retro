@@ -28,6 +28,9 @@ player_vars:
   bonus_val:
     value_type: int
     initial_value: 0
+  bonus_val_tmp:
+    value_type: int
+    initial_value: 0
   bonus_multiplier:
     value_type: int
     initial_value: 1

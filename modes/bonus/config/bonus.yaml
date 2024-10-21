@@ -11,3 +11,7 @@ mode_settings:
 variable_player:
   bonus_countdown_decrement:
     score: 1000 * current_player.bonus_multiplier
+  bonus_start:
+    bonus_val_tmp:
+      int: 0
+      action: set

@@ -1,6 +1,6 @@
 from mpf.core.custom_code import CustomCode
 
-delay = 200 ; int()
+delay = 150 # type: int()
 
 class BonusCounter(CustomCode):
 
@@ -12,19 +12,15 @@ class BonusCounter(CustomCode):
 
     def _start_bonus_countdown(self, **kwargs):
         del kwargs
-        #global delay
         if self.machine.game.player.bonus_val > 0:
-            # delay = 1800/self.machine.game.player.bonus_val
-            # if delay > 100:
-            #     delay = 100
             self.machine.game.player.bonus_val -= 1
-            self.machine.game.player.bonuscountdisplay += 1
             self.machine.events.post('bonus_countdown_decrement')
+        else:
+            self.machine.events.post('finish_up_bonus')
 
     def _decrement_bonus(self, **kwargs):
             global delay
             self.machine.delay.add(ms=delay, callback=self._do_decrement)
-            # if BonusCounter.delay > 10:
             self.machine.delay.add(ms=delay, callback=self._do_decrement_audio)
 
     def _do_decrement_audio(self, **kwargs):
@@ -36,7 +32,6 @@ class BonusCounter(CustomCode):
     def _do_decrement(self):
         if self.machine.game.player.bonus_val > 0:
             self.machine.game.player.bonus_val -= 1
-            self.machine.game.player.bonuscountdisplay += 1
             self.machine.events.post('bonus_countdown_decrement')
         else:
             self.machine.events.post('finish_up_bonus')
