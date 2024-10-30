@@ -281,80 +281,120 @@ variable_player:
     score: 1000 * current_player.playfield_multiplier
   left_targets_1_target_shot_profile_100_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
+  left_targets_1_target_shot_profile_100_5000pts_hit{current_player.bonus_multiplier < 5}:
+    bonus_multiplier: 1
   left_targets_1k_target_shot_profile_1000_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
+  left_targets_1k_target_shot_profile_1000_5000pts_hit{current_player.bonus_multiplier < 5}:
+    bonus_multiplier: 1
   left_targets_2_target_shot_profile_100_100pts_hit:
     score: 100 * current_player.playfield_multiplier
   left_targets_2k_target_shot_profile_1000_1000pts_hit:
     score: 1000 * current_player.playfield_multiplier
   left_targets_2_target_shot_profile_100_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
+  left_targets_2_target_shot_profile_100_5000pts_hit{current_player.bonus_multiplier < 5}:
+    bonus_multiplier: 1
   left_targets_2k_target_shot_profile_1000_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
+  left_targets_2k_target_shot_profile_1000_5000pts_hit{current_player.bonus_multiplier < 5}:
+    bonus_multiplier: 1
   left_targets_3_target_shot_profile_100_100pts_hit:
     score: 100 * current_player.playfield_multiplier
   left_targets_3k_target_shot_profile_1000_1000pts_hit:
     score: 1000 * current_player.playfield_multiplier
   left_targets_3_target_shot_profile_100_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
+  left_targets_3_target_shot_profile_100_5000pts_hit{current_player.bonus_multiplier < 5}:
+    bonus_multiplier: 1
   left_targets_3k_target_shot_profile_1000_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
+  left_targets_3k_target_shot_profile_1000_5000pts_hit{current_player.bonus_multiplier < 5}:
+    bonus_multiplier: 1
   left_targets_4_target_shot_profile_100_100pts_hit:
     score: 100 * current_player.playfield_multiplier
   left_targets_4k_target_shot_profile_1000_1000pts_hit:
     score: 1000 * current_player.playfield_multiplier
   left_targets_4_target_shot_profile_100_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
+  left_targets_4_target_shot_profile_100_5000pts_hit{current_player.bonus_multiplier < 5}:
+    bonus_multiplier: 1
   left_targets_4k_target_shot_profile_1000_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
+  left_targets_4k_target_shot_profile_1000_5000pts_hit{current_player.bonus_multiplier < 5}:
+    bonus_multiplier: 1
   left_targets_5_target_shot_profile_100_100pts_hit:
     score: 100 * current_player.playfield_multiplier
   left_targets_5k_target_shot_profile_1000_1000pts_hit:
     score: 1000 * current_player.playfield_multiplier
   left_targets_5_target_shot_profile_100_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
+  left_targets_5_target_shot_profile_100_5000pts_hit{current_player.bonus_multiplier < 5}:
+    bonus_multiplier: 1
   left_targets_5k_target_shot_profile_1000_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
+  left_targets_5k_target_shot_profile_1000_5000pts_hit{current_player.bonus_multiplier < 5}:
+    bonus_multiplier: 1
   right_targets_1_target_shot_profile_100_100pts_hit:
     score: 100 * current_player.playfield_multiplier
   right_targets_1k_target_shot_profile_1000_1000pts_hit:
     score: 1000 * current_player.playfield_multiplier
   right_targets_1_target_shot_profile_100_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
+  right_targets_1_target_shot_profile_100_5000pts_hit{current_player.bonus_multiplier < 5}:
+    bonus_multiplier: 1
   right_targets_1k_target_shot_profile_1000_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
+  right_targets_1k_target_shot_profile_1000_5000pts_hit{current_player.bonus_multiplier < 5}:
+    bonus_multiplier: 1
   right_targets_2_target_shot_profile_100_100pts_hit:
     score: 100 * current_player.playfield_multiplier
   right_targets_2k_target_shot_profile_1000_1000pts_hit:
     score: 1000 * current_player.playfield_multiplier
   right_targets_2_target_shot_profile_100_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
+  right_targets_2_target_shot_profile_100_5000pts_hit{current_player.bonus_multiplier < 5}:
+    bonus_multiplier: 1
   right_targets_2k_target_shot_profile_1000_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
+  right_targets_2k_target_shot_profile_1000_5000pts_hit{current_player.bonus_multiplier < 5}:
+    bonus_multiplier: 1
   right_targets_3_target_shot_profile_100_100pts_hit:
     score: 100 * current_player.playfield_multiplier
   right_targets_3k_target_shot_profile_1000_1000pts_hit:
     score: 1000 * current_player.playfield_multiplier
   right_targets_3_target_shot_profile_100_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
+  right_targets_3_target_shot_profile_100_5000pts_hit{current_player.bonus_multiplier < 5}:
+    bonus_multiplier: 1
   right_targets_3k_target_shot_profile_1000_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
+  right_targets_3k_target_shot_profile_1000_5000pts_hit{current_player.bonus_multiplier < 5}:
+    bonus_multiplier: 1
   right_targets_4_target_shot_profile_100_100pts_hit:
     score: 100 * current_player.playfield_multiplier
   right_targets_4k_target_shot_profile_1000_1000pts_hit:
     score: 1000 * current_player.playfield_multiplier
   right_targets_4_target_shot_profile_100_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
+  right_targets_4_target_shot_profile_100_5000pts_hit{current_player.bonus_multiplier < 5}:
+    bonus_multiplier: 1
   right_targets_4k_target_shot_profile_1000_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
+  right_targets_4k_target_shot_profile_1000_5000pts_hit{current_player.bonus_multiplier < 5}:
+    bonus_multiplier: 1
   right_targets_5_target_shot_profile_100_100pts_hit:
     score: 100 * current_player.playfield_multiplier
   right_targets_5k_target_shot_profile_1000_1000pts_hit:
     score: 1000 * current_player.playfield_multiplier
   right_targets_5_target_shot_profile_100_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
+  right_targets_5_target_shot_profile_100_5000pts_hit{current_player.bonus_multiplier < 5}:
+    bonus_multiplier: 1
   right_targets_5k_target_shot_profile_1000_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
+  right_targets_5k_target_shot_profile_1000_5000pts_hit{current_player.bonus_multiplier < 5}:
+    bonus_multiplier: 1
   player_basedrops_drops_timer_tick{value==0}:
     targets_freeze_index:
       int: 1
@@ -514,6 +554,18 @@ show_player:
       action: stop
     right_targets_5_hold:
       action: stop
+  player_bonus_multiplier{value==2}:
+    seismic_mult_2:
+      loops: -1
+  player_bonus_multiplier{value==3}:
+    seismic_mult_3:
+      loops: -1
+  player_bonus_multiplier{value==4}:
+    seismic_mult_4:
+      loops: -1
+  player_bonus_multiplier{value==5}:
+    seismic_mult_5:
+      loops: -1
 
 shows:
   left_targets_1000:
@@ -644,3 +696,19 @@ shows:
         l_right_targets_3: off
         l_right_targets_4: off
         l_right_targets_5: white
+  seismic_mult_2:
+    - duration: 150ms
+      lights:
+        l_seismic_mult_2: white
+  seismic_mult_3:
+    - duration: 150ms
+      lights:
+        l_seismic_mult_3: white
+  seismic_mult_4:
+    - duration: 150ms
+      lights:
+        l_seismic_mult_4: white
+  seismic_mult_5:
+    - duration: 150ms
+      lights:
+        l_seismic_mult_5: white

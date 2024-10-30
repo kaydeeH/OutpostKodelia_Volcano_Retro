@@ -6,6 +6,10 @@ mode:
   events_when_started: base_setup
 
 variable_player:
+  base_setup:
+    bonus_multiplier:
+      int: 1
+      action: set
   10pt_standing_hit:
     score: 10 * current_player.playfield_multiplier
   player_bonus_val_tmp{change > 0 and current_player.bonus_val + change > 19}:
