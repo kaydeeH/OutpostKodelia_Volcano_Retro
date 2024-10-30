@@ -60,6 +60,7 @@ coils:
     number:
   c_right_gate:
     number:
+    allow_enable: true
 
 autofire_coils:
   slingshot_left:

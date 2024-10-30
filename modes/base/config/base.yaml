@@ -18,6 +18,13 @@ variable_player:
       action: set
   single_player_ball_started:
     bonus_val_tmp: 1
+  rollunder_hit:
+    bonus_val_tmp: 1
+    score: 3000 * current_player.playfield_multiplier
+  kicker_hit{settings.balls_per_game==3}:
+    score: 1000
+  kicker_hit{settings.balls_per_game==5}:
+    score: 100
 
 shots:
   10pt_standing:
@@ -26,3 +33,7 @@ shots:
     switch: s_freeze
     mark_playfield_active: false
     disable_events: playfield_active
+  rollunder:
+    switch: s_rollunder
+  kicker:
+    switch: s_kicking_target

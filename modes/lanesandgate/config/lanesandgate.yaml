@@ -1,0 +1,88 @@
+#config_version=6
+
+mode:
+  start_events: mode_base_started
+  priority: 100
+  events_when_started: lanesandgate_setup
+
+variable_player:
+  left_outlane_hit:
+    score: 3000 * current_player.playfield_multiplier
+  left_return_hit:
+    bonus_val_tmp: 1
+    score: 100 * current_player.playfield_multiplier
+  right_outlane_closed_hit:
+    score: 5000 * current_player.playfield_multiplier
+  right_outlane_open_hit:
+    score: 1000 * current_player.playfield_multiplier
+  open_gate_unlit:
+    score: 1000 * current_player.playfield_multiplier
+  open_gate_lit:
+    score: 1000 * current_player.playfield_multiplier
+
+shots:
+  left_outlane:
+    switch: s_outlane_left
+  left_return:
+    switch: s_return_left
+  right_outlane_closed:
+    #When the gate is closed, ball will roll to drain.
+    switch: s_outlane_right
+    enable_events: lanesandgate_setup, gate_close
+    disable_events: gate_open
+  right_outlane_open:
+    #When the gate is open, ball will route to right flipper.
+    switch: s_outlane_right
+    enable_events: gate_open
+    disable_events: gate_close
+  open_gate_unlit:
+    switch: s_spot_target
+    enable_events: lanesandgate_setup, gate_close
+    disable_events: lite_open_gate
+  open_gate_lit:
+    switch: s_spot_target
+    enable_events: lite_open_gate
+    disable_events: ball_will_end, gate_close
+
+event_player:
+  drop_target_bank_db_right_targets_down:
+    lite_open_gate
+  drop_target_bank_db_left_targets_down:
+    lite_open_gate
+  right_outlane_open_hit:
+    gate_close
+  open_gate_lit_hit:
+    gate_open
+  right_outlane_closed_hit:
+    light_extra_ball
+
+show_player:
+  lite_open_gate:
+    open_gate_light:
+      loops: -1
+  open_gate_lit_hit:
+    open_gate_light:
+      action: stop
+    gate_open_light:
+      loops: -1
+  gate_close:
+    gate_open_light:
+      action: stop
+
+shows:
+  open_gate_light:
+    - duration: 150ms
+      lights:
+        l_open_gate: white
+  gate_open_light:
+    - duration: 150ms
+      lights:
+        l_gate_open: white
+
+coil_player:
+  gate_open:
+    c_right_gate:
+      action: on
+  gate_close:
+    c_right_gate:
+      action: off

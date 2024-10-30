@@ -133,3 +133,5 @@ switches:
     tags: playfield_active
   s_freeze:
     number:
+  s_ballsave:
+    number:
