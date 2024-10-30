@@ -1,0 +1,39 @@
+#config_version=6
+
+mode:
+  start_events: mode_base_started
+  priority: 100
+  events_when_started: spinner_setup
+
+event_player:
+  crater_3_hit:
+    spinner_lit
+  crater_4_hit:
+    spinner_lit
+
+shots:
+  spinner:
+    switch: s_spinner
+    enable_events: spinner_setup
+    disable_events: spinner_lit
+  spinner_1K:
+    switch: s_spinner
+    enable_events: spinner_lit
+    disable_events: ball_will_end
+
+variable_player:
+  spinner_hit:
+    score: 100 * current_player.playfield_multiplier
+  spinner_1K_hit:
+    score: 1000 * current_player.playfield_multiplier
+
+show_player:
+  spinner_lit:
+    spinner_light:
+      loops: -1
+
+shows:
+  spinner_light:
+    - duration: 150ms
+      lights:
+        l_spinner_1k: white

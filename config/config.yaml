@@ -36,6 +36,7 @@ modes:
   - basecraters
   - basefirepit
   - basesaucer
+  - basespinner
 
 custom_code:
   - custom_code.bonus_counter.BonusCounter
