@@ -1,0 +1,8 @@
+#show_version=6
+
+- duration: 500ms
+  lights:
+    l_collect_seismic: on
+- duration: 500ms
+  lights:
+    l_collect_seismic: off

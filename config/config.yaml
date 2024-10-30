@@ -29,11 +29,13 @@ modes:
   - high_score
   - bonus
 # game logic
-  - pops
+  - basepops
   - multiball
   - basedrops
   - backboxplumes
   - basecraters
+  - basefirepit
+  - basesaucer
 
 custom_code:
   - custom_code.bonus_counter.BonusCounter

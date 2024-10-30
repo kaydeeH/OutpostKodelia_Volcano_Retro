@@ -36,6 +36,7 @@ ball_devices:
     eject_coil: c_firepit_kicker
     eject_targets: playfield
     captures_from: playfield
+    eject_events: firepit_eject
   bd_top_saucer:
     ball_switches: s_top_saucer
     eject_coil: c_top_saucer

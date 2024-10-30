@@ -1,0 +1,34 @@
+#config_version=6
+
+mode:
+  start_events: mode_base_started
+  priority: 100
+  events_when_started: firepit_setup
+
+ball_holds:
+  firepit:
+    balls_to_hold: 1
+    hold_devices: bd_firepit
+    enable_events: firepit_setup
+    release_one_events: timer_firepit_timer_complete
+
+timers:
+  firepit_timer:
+    start_value: 0
+    end_value: 1
+    tick_interval: 1s
+    direction: up
+    control_events:
+      - action: start
+        event: balldevice_bd_firepit_ball_entered
+      - action: reset
+        event: balldevice_bd_firepit_ejecting_ball
+    restart_on_complete: false
+
+variable_player:
+  firepit_hit:
+    score: 5000 * current_player.playfield_multiplier
+
+shots:
+  firepit:
+    switch: s_firepit_kicker

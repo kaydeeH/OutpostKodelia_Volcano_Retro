@@ -1,0 +1,59 @@
+#config_version=6
+
+mode:
+  start_events: mode_base_started
+  priority: 100
+  events_when_started: saucer_setup
+
+ball_holds:
+  saucer:
+    balls_to_hold: 1
+    hold_devices: bd_top_saucer
+    enable_events: saucer_setup, tbd
+    disable_events: light_collect_seismic
+    release_one_events: timer_saucer_timer_complete
+  seismic_saucer:
+    balls_to_hold: 1
+    hold_devices: bd_top_saucer
+    enable_events: light_collect_seismic
+    disable_events: tbd
+    release_one_events: finish_up_seismic
+
+timers:
+  saucer_timer:
+    start_value: 0
+    end_value: 1
+    tick_interval: 1s
+    direction: up
+    control_events:
+      - action: start
+        event: balldevice_bd_top_saucer_ball_entered
+      - action: reset
+        event: balldevice_bd_top_saucer_ejecting_ball
+    restart_on_complete: false
+
+variable_player:
+  saucer_hit:
+    score: 3000 * current_player.playfield_multiplier
+  seismic_countdown_decrement:
+    score: 1000 * current_player.bonus_multiplier
+  finish_up_seismic:
+    bonus_val_tmp: 1
+
+shots:
+  saucer:
+    switch: s_top_saucer
+
+event_player:
+  player_bonus_val{value==19}:
+    light_collect_seismic
+  balldevice_bd_top_saucer_ball_entered{current_player.bonus_val==19}:
+    collect_seismic
+
+show_player:
+  light_collect_seismic:
+    collect_seismic_show:
+      loops: -1
+  finish_up_seismic:
+    collect_seismic_show:
+      action: stop

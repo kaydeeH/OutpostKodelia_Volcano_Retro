@@ -20,9 +20,8 @@ class BonusLightController(CustomCode):
         self.info_log("Bonus Light Event --> value: " + str(val) + ", change: " + str(change))
 
         #If the bonus is increasing...
-        #(remember as you read below, range function is exclusive of the final value)
         if change > 0:
-            # If the new value is less than 11, check the change amount and turn on that many lights.
+            #If the new value is less than 11, check the change amount and turn on that many lights.
             if val < 11:
                 for x in range(change):
                     self._get_bonus_light_by_number(val - x).on(fade_ms=50)
@@ -48,8 +47,8 @@ class BonusLightController(CustomCode):
                 for x in range(1, val-10+1):
                     self._get_bonus_light_by_number(x).on(fade_ms=50)
 
-        #But if the bonus is decreasing (bonus is being tallied at the end of the ball). This will
-        #only decrement by 1 at a time, so it's a little simpler.
+        #But if the bonus is decreasing (bonus is being tallied at the end of the ball or seismic
+        #has been collected). This will only decrement by 1 at a time, so it's a little simpler.
         elif change < 0:
             #If the new value is 10 (coming from 11), turn all lights on.
             if val == 10:
@@ -61,8 +60,6 @@ class BonusLightController(CustomCode):
             #If the new value is less than 10 (coming from less than 10) then turn off val + 1.
             if val < 10:
                 self._get_bonus_light_by_number(val + 1).off(fade_ms=50)
-        # else:
-        #     self.info_log("Bonus Light Controller: How embarassing, I wasn't expecting this to happen.")
 
     @staticmethod
     def _get_bonus_light_by_number(num: int):
