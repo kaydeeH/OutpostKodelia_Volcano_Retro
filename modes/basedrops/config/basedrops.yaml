@@ -415,6 +415,28 @@ variable_player:
     targets_freeze_index:
       int: 5
       action: set
+  drop_target_bank_db_left_targets_down{current_player.right_drops_completed==0}:
+    left_drops_completed:
+      int: 1
+      action: set
+  drop_target_bank_db_right_targets_down{current_player.left_drops_completed==0}:
+    right_drops_completed:
+      int: 1
+      action: set
+  drop_target_bank_db_left_targets_down{current_player.right_drops_completed==1}:
+    right_drops_completed:
+      int: 0
+      action: set
+    extra_ball_ready:
+      int: 1
+      action: set
+  drop_target_bank_db_right_targets_down{current_player.left_drops_completed==1}:
+    left_drops_completed:
+      int: 0
+      action: set
+    extra_ball_ready:
+      int: 1
+      action: set
 
 show_player:
   player_basedrops_drops_timer_tick{value==0}:

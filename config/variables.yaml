@@ -37,3 +37,15 @@ player_vars:
   bonus_multiplier:
     value_type: int
     initial_value: 1
+  left_drops_completed:
+    value_type: int
+    initial_value: 0
+  right_drops_completed:
+    value_type: int
+    initial_value: 0
+  extra_ball_ready:
+    value_type: int
+    initial_value: 0
+  outlane_eb_ready:
+    value_type: int
+    initial_value: 0

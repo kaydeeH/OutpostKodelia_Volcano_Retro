@@ -37,7 +37,7 @@ modes:
   - basefirepit
   - basesaucer
   - basespinner
-  - lanesandgate
+  - baselanesandgate
 
 custom_code:
   - custom_code.bonus_counter.BonusCounter

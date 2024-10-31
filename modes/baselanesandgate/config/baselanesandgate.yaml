@@ -3,7 +3,7 @@
 mode:
   start_events: mode_base_started
   priority: 100
-  events_when_started: lanesandgate_setup
+  events_when_started: baselanesandgate_setup
 
 variable_player:
   left_outlane_hit:
@@ -28,7 +28,7 @@ shots:
   right_outlane_closed:
     #When the gate is closed, ball will roll to drain.
     switch: s_outlane_right
-    enable_events: lanesandgate_setup, gate_close
+    enable_events: baselanesandgate_setup, gate_close
     disable_events: gate_open
   right_outlane_open:
     #When the gate is open, ball will route to right flipper.
@@ -37,7 +37,7 @@ shots:
     disable_events: gate_close
   open_gate_unlit:
     switch: s_spot_target
-    enable_events: lanesandgate_setup, gate_close
+    enable_events: baselanesandgate_setup, gate_close
     disable_events: lite_open_gate
   open_gate_lit:
     switch: s_spot_target
@@ -50,11 +50,11 @@ event_player:
   drop_target_bank_db_left_targets_down:
     lite_open_gate
   right_outlane_open_hit:
-    gate_close
+    - gate_close
   open_gate_lit_hit:
     gate_open
-  right_outlane_closed_hit:
-    light_extra_ball
+  right_outlane_closed_hit{settings.liberal_conservative==1}:
+    outlane_eb_ready
 
 show_player:
   lite_open_gate:

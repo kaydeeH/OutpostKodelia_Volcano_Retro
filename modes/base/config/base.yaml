@@ -10,6 +10,12 @@ variable_player:
     bonus_multiplier:
       int: 1
       action: set
+    extra_ball_ready:
+      int: 0
+      action: set
+    outlane_eb_ready:
+      int: 0
+      action: set
   base_setup{settings.balls_per_game==5}:
     special_ready:
       int: 0
@@ -49,6 +55,9 @@ shots:
 extra_balls:
   extra_ball:
     award_events: award_extra_ball
-    light_events: light_extra_ball
+    light_events: extra_ball_ready
+  outlane_extra_ball:
+    award_events: award_outlane_extra_ball
+    light_events: outlane_eb_ready
   special_extra_ball:
     award_events: award_special_extra_ball

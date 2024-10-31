@@ -63,6 +63,7 @@ settings:
     values:
       1: "ON"
       0: "OFF"
+    key_type: int
     default: 1
     sort: 106
     settingType: standard
@@ -71,6 +72,7 @@ settings:
     values:
       1: "Liberal:\nBall through right outlane with\ngate closed will light EXTRA BALL\nfor one shot only."
       0: "Conservative:\nNo EXTRA BALL through right outlane."
+    key_type: int
     default: 1
     sort: 107
     settingType: standard

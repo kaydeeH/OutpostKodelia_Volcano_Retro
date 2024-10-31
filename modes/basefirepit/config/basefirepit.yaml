@@ -28,7 +28,59 @@ timers:
 variable_player:
   firepit_hit:
     score: 5000 * current_player.playfield_multiplier
+  firepit_hit{current_player.extra_ball_ready==1 and settings.novelty_mode==1}:
+    score: 50000 * current_player.playfield_multiplier
+    extra_ball_ready:
+      int: 0
+      action: set
+  firepit_hit{current_player.outlane_eb_ready==1 and settings.novelty_mode==1}:
+    score: 50000 * current_player.playfield_multiplier
+    outlane_eb_ready:
+      int: 0
+      action: set
+  award_extra_ball:
+    extra_ball_ready:
+      int: 0
+      action: set
+  outlane_eb_ready:
+    outlane_eb_ready:
+      int: 1
+      action: set
+
+event_player:
+  firepit_hit{current_player.extra_ball_ready==1 and settings.novelty_mode==0}:
+    award_extra_ball
+  player_extra_ball_ready{value==1}:
+    extra_ball_ready
+  firepit_hit{current_player.outlane_eb_ready==1 and settings.novelty_mode==0}:
+    award_outlane_extra_ball
 
 shots:
   firepit:
     switch: s_firepit_kicker
+
+shows:
+  eb_ready:
+    - duration: 150ms
+      lights:
+        l_extra_ball: on
+
+show_player:
+  extra_ball_extra_ball_lit:
+    eb_ready:
+      loops: -1
+  award_extra_ball:
+    eb_ready:
+      action: stop
+  firepit_hit{current_player.extra_ball_ready==1 and settings.novelty_mode==1}:
+    eb_ready:
+      action: stop
+  extra_ball_outlane_extra_ball_lit:
+    eb_ready:
+      loops: -1
+  award_outlane_extra_ball:
+    eb_ready:
+      action: stop
+  firepit_hit{current_player.outlane_eb_ready==1 and settings.novelty_mode==1}:
+    eb_ready:
+      action: stop
