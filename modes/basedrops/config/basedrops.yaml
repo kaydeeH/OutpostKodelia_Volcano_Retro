@@ -283,10 +283,16 @@ variable_player:
     score: 5000 * current_player.playfield_multiplier
   left_targets_1_target_shot_profile_100_5000pts_hit{current_player.bonus_multiplier < 5}:
     bonus_multiplier: 1
+    ball_save_ready:
+      action: set
+      int: 1
   left_targets_1k_target_shot_profile_1000_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
   left_targets_1k_target_shot_profile_1000_5000pts_hit{current_player.bonus_multiplier < 5}:
     bonus_multiplier: 1
+    ball_save_ready:
+      action: set
+      int: 1
   left_targets_2_target_shot_profile_100_100pts_hit:
     score: 100 * current_player.playfield_multiplier
   left_targets_2k_target_shot_profile_1000_1000pts_hit:
@@ -295,10 +301,16 @@ variable_player:
     score: 5000 * current_player.playfield_multiplier
   left_targets_2_target_shot_profile_100_5000pts_hit{current_player.bonus_multiplier < 5}:
     bonus_multiplier: 1
+    ball_save_ready:
+      action: set
+      int: 1
   left_targets_2k_target_shot_profile_1000_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
   left_targets_2k_target_shot_profile_1000_5000pts_hit{current_player.bonus_multiplier < 5}:
     bonus_multiplier: 1
+    ball_save_ready:
+      action: set
+      int: 1
   left_targets_3_target_shot_profile_100_100pts_hit:
     score: 100 * current_player.playfield_multiplier
   left_targets_3k_target_shot_profile_1000_1000pts_hit:
@@ -307,10 +319,16 @@ variable_player:
     score: 5000 * current_player.playfield_multiplier
   left_targets_3_target_shot_profile_100_5000pts_hit{current_player.bonus_multiplier < 5}:
     bonus_multiplier: 1
+    ball_save_ready:
+      action: set
+      int: 1
   left_targets_3k_target_shot_profile_1000_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
   left_targets_3k_target_shot_profile_1000_5000pts_hit{current_player.bonus_multiplier < 5}:
     bonus_multiplier: 1
+    ball_save_ready:
+      action: set
+      int: 1
   left_targets_4_target_shot_profile_100_100pts_hit:
     score: 100 * current_player.playfield_multiplier
   left_targets_4k_target_shot_profile_1000_1000pts_hit:
@@ -319,10 +337,16 @@ variable_player:
     score: 5000 * current_player.playfield_multiplier
   left_targets_4_target_shot_profile_100_5000pts_hit{current_player.bonus_multiplier < 5}:
     bonus_multiplier: 1
+    ball_save_ready:
+      action: set
+      int: 1
   left_targets_4k_target_shot_profile_1000_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
   left_targets_4k_target_shot_profile_1000_5000pts_hit{current_player.bonus_multiplier < 5}:
     bonus_multiplier: 1
+    ball_save_ready:
+      action: set
+      int: 1
   left_targets_5_target_shot_profile_100_100pts_hit:
     score: 100 * current_player.playfield_multiplier
   left_targets_5k_target_shot_profile_1000_1000pts_hit:
@@ -331,10 +355,16 @@ variable_player:
     score: 5000 * current_player.playfield_multiplier
   left_targets_5_target_shot_profile_100_5000pts_hit{current_player.bonus_multiplier < 5}:
     bonus_multiplier: 1
+    ball_save_ready:
+      action: set
+      int: 1
   left_targets_5k_target_shot_profile_1000_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
   left_targets_5k_target_shot_profile_1000_5000pts_hit{current_player.bonus_multiplier < 5}:
     bonus_multiplier: 1
+    ball_save_ready:
+      action: set
+      int: 1
   right_targets_1_target_shot_profile_100_100pts_hit:
     score: 100 * current_player.playfield_multiplier
   right_targets_1k_target_shot_profile_1000_1000pts_hit:
@@ -343,10 +373,16 @@ variable_player:
     score: 5000 * current_player.playfield_multiplier
   right_targets_1_target_shot_profile_100_5000pts_hit{current_player.bonus_multiplier < 5}:
     bonus_multiplier: 1
+    ball_save_ready:
+      action: set
+      int: 1
   right_targets_1k_target_shot_profile_1000_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
   right_targets_1k_target_shot_profile_1000_5000pts_hit{current_player.bonus_multiplier < 5}:
     bonus_multiplier: 1
+    ball_save_ready:
+      action: set
+      int: 1
   right_targets_2_target_shot_profile_100_100pts_hit:
     score: 100 * current_player.playfield_multiplier
   right_targets_2k_target_shot_profile_1000_1000pts_hit:
@@ -355,10 +391,16 @@ variable_player:
     score: 5000 * current_player.playfield_multiplier
   right_targets_2_target_shot_profile_100_5000pts_hit{current_player.bonus_multiplier < 5}:
     bonus_multiplier: 1
+    ball_save_ready:
+      action: set
+      int: 1
   right_targets_2k_target_shot_profile_1000_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
   right_targets_2k_target_shot_profile_1000_5000pts_hit{current_player.bonus_multiplier < 5}:
     bonus_multiplier: 1
+    ball_save_ready:
+      action: set
+      int: 1
   right_targets_3_target_shot_profile_100_100pts_hit:
     score: 100 * current_player.playfield_multiplier
   right_targets_3k_target_shot_profile_1000_1000pts_hit:
@@ -367,10 +409,16 @@ variable_player:
     score: 5000 * current_player.playfield_multiplier
   right_targets_3_target_shot_profile_100_5000pts_hit{current_player.bonus_multiplier < 5}:
     bonus_multiplier: 1
+    ball_save_ready:
+      action: set
+      int: 1
   right_targets_3k_target_shot_profile_1000_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
   right_targets_3k_target_shot_profile_1000_5000pts_hit{current_player.bonus_multiplier < 5}:
     bonus_multiplier: 1
+    ball_save_ready:
+      action: set
+      int: 1
   right_targets_4_target_shot_profile_100_100pts_hit:
     score: 100 * current_player.playfield_multiplier
   right_targets_4k_target_shot_profile_1000_1000pts_hit:
@@ -379,10 +427,16 @@ variable_player:
     score: 5000 * current_player.playfield_multiplier
   right_targets_4_target_shot_profile_100_5000pts_hit{current_player.bonus_multiplier < 5}:
     bonus_multiplier: 1
+    ball_save_ready:
+      action: set
+      int: 1
   right_targets_4k_target_shot_profile_1000_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
   right_targets_4k_target_shot_profile_1000_5000pts_hit{current_player.bonus_multiplier < 5}:
     bonus_multiplier: 1
+    ball_save_ready:
+      action: set
+      int: 1
   right_targets_5_target_shot_profile_100_100pts_hit:
     score: 100 * current_player.playfield_multiplier
   right_targets_5k_target_shot_profile_1000_1000pts_hit:
@@ -391,10 +445,16 @@ variable_player:
     score: 5000 * current_player.playfield_multiplier
   right_targets_5_target_shot_profile_100_5000pts_hit{current_player.bonus_multiplier < 5}:
     bonus_multiplier: 1
+    ball_save_ready:
+      action: set
+      int: 1
   right_targets_5k_target_shot_profile_1000_5000pts_hit:
     score: 5000 * current_player.playfield_multiplier
   right_targets_5k_target_shot_profile_1000_5000pts_hit{current_player.bonus_multiplier < 5}:
     bonus_multiplier: 1
+    ball_save_ready:
+      action: set
+      int: 1
   player_basedrops_drops_timer_tick{value==0}:
     targets_freeze_index:
       int: 1

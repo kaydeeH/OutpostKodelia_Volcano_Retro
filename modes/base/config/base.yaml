@@ -7,6 +7,9 @@ mode:
 
 variable_player:
   base_setup:
+    ball_save_ready:
+      int: 0
+      action: set
     bonus_multiplier:
       int: 1
       action: set
@@ -16,6 +19,7 @@ variable_player:
     outlane_eb_ready:
       int: 0
       action: set
+    bonus_val_tmp: 1
   base_setup{settings.balls_per_game==5}:
     special_ready:
       int: 0
@@ -30,8 +34,6 @@ variable_player:
     bonus_val:
       int: current_player.bonus_val + change
       action: set
-  single_player_ball_started:
-    bonus_val_tmp: 1
   rollunder_hit:
     bonus_val_tmp: 1
     score: 3000 * current_player.playfield_multiplier

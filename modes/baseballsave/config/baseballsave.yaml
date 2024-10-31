@@ -1,0 +1,42 @@
+#config_version=6
+
+mode:
+  start_events: mode_base_started
+  priority: 100
+  events_when_started: baseballsave_setup
+
+show_player:
+  player_ball_save_ready{value == 1}:
+    ballsave:
+      loops: -1
+      key: ballsave
+  ballsave_hit:
+    ballsave:
+      action: stop
+      key: ballsave
+
+shows:
+  ballsave:
+    - duration: 500ms
+      lights:
+        l_ball_save_1: on
+        l_ball_save_2: off
+        l_ball_save_3: off
+    - duration: 500ms
+      lights:
+        l_ball_save_2: on
+    - duration: 500ms
+      lights:
+        l_ball_save_3: on
+
+shots:
+  ballsave:
+    switch: s_ballsave
+
+variable_player:
+  ballsave_hit{current_player.ball_save_ready == 1}:
+    ball_save_ready: -1
+
+coil_player:
+  ballsave_hit{current_player.ball_save_ready == 1}:
+    c_ball_saver: pulse

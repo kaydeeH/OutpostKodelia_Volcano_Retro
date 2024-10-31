@@ -40,6 +40,7 @@ modes:
   - basesaucer
   - basespinner
   - baselanesandgate
+  - baseballsave
 
 custom_code:
   - custom_code.bonus_counter.BonusCounter

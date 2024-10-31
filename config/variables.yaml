@@ -49,3 +49,6 @@ player_vars:
   outlane_eb_ready:
     value_type: int
     initial_value: 0
+  ball_save_ready:
+    value_type: int
+    initial_value: 0
