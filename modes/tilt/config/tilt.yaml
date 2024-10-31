@@ -1,0 +1,31 @@
+#config_version=6
+tilt:
+  multiple_hit_window: settings.multiple_hit_window
+  settle_time: settings.settle_time
+  warnings_to_tilt: settings.warnings_to_tilt
+
+show_player:
+  tilt_warning:
+    tilt_flash:
+      loops: 3
+  tilt:
+    tilt_flash:
+      action: stop
+    tilt_on:
+      loops: -1
+  tilt_clear:
+    tilt_on:
+      action: stop
+
+shows:
+  tilt_flash:
+    - duration: 250ms
+      lights:
+        l_bb_tilt: on
+    - duration: 250ms
+      lights:
+        l_bb_tilt: off
+  tilt_on:
+    - duration: 150ms
+      lights:
+        l_bb_tilt: on

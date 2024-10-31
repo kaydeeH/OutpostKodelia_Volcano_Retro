@@ -16,3 +16,6 @@ credits:
     - event: award_special_replay
       type: special
       credits: 1
+    - event: match_alert
+      type: match
+      credits: 1

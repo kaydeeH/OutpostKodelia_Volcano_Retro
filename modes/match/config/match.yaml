@@ -1,0 +1,90 @@
+#config_version=6
+mode:
+  events_when_started: match_setup
+
+mode_settings:
+  non_match_number_step: 10
+
+queue_relay_player:
+  match_no_match:
+    post: no_match
+    wait_for: end_match
+    pass_args: true
+  match_has_match:
+    post: has_match
+    wait_for: end_match
+    pass_args: true
+
+timers:
+  match_timer:
+    start_value: 0
+    end_value: 4
+    tick_interval: 1s
+    direction: up
+    control_events:
+      - action: start
+        event: match_setup
+    restart_on_complete: false
+
+segment_display_player:
+  machine_var_match_number:
+    display5:
+      text: "  {machine.match_number:d}"
+      color: black
+      key: match
+  has_match{winner_number == match_number0}:
+    display1:
+      text: "{players[0].score:d}"
+      action: flash_match
+      key: match
+      color: black
+      priority: 1000
+  has_match{game.num_players > 1 and winner_number == match_number1}:
+    display2:
+      text: "{players[1].score:d}"
+      action: flash_match
+      key: match
+      color: black
+      priority: 1000
+  has_match{game.num_players > 2 and winner_number == match_number2}:
+    display3:
+      text: "{players[2].score:d}"
+      action: flash_match
+      key: match
+      color: black
+      priority: 1000
+  has_match{game.num_players > 3 and winner_number == match_number3}:
+    display4:
+      text: "{players[3].score:d}"
+      action: flash_match
+      key: match
+      color: black
+      priority: 1000
+
+event_player:
+  timer_match_timer_complete:
+    end_match
+
+
+show_player:
+  machine_var_match_number:
+    match:
+      loops: -1
+  match_alert:
+    match_coil:
+      loops: 1
+
+shows:
+  match:
+    - duration: 150ms
+      lights:
+        l_bb_match: on
+  match_coil:
+    - duration: 100ms
+      coils:
+        c_knocker: pulse
+
+#sound_player:
+#  match_alert:
+#    match_sound:
+#      action: play

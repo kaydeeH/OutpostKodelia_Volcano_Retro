@@ -28,6 +28,8 @@ modes:
   - credits
   - high_score
   - bonus
+  - match
+  - tilt
 # game logic
   - basepops
   - multiball
@@ -42,6 +44,8 @@ modes:
 custom_code:
   - custom_code.bonus_counter.BonusCounter
   - custom_code.bonus_light_controller.BonusLightController
+  - custom_code.drain_to_extra_ball.DrainToExtraBall
+  - custom_code.match_alerter.MatchAlerter
 
 game:
   balls_per_game: settings.balls_per_game

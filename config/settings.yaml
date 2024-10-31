@@ -76,3 +76,35 @@ settings:
     default: 1
     sort: 107
     settingType: standard
+  warnings_to_tilt:
+    label: Number of Tilt Warnings
+    values:
+      1: "No Warnings"
+      3: "2 Warnings"
+      4: "3 Warnings"
+    default: 3
+    key_type: int
+    sort: 107
+    settingType: standard
+  settle_time:
+    label: Tilt Wait Before Next Ball
+    values:
+      3000: "3s"
+      5000: "5s"
+      10000: "10s"
+      30000: "30s"
+    default: 5000
+    key_type: int
+    sort: 108
+    settingType: standard
+  multiple_hit_window:
+    label: Tilt Sensitivity
+    values:
+      150: "Sensitive"
+      300: "Normal"
+      500: "Insensitive"
+      1000: "Very Insensitive"
+    default: 300
+    key_type: int
+    sort: 109
+    settingType: standard

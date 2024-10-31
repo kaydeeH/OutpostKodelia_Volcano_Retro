@@ -513,3 +513,10 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
+  l_bb_match:
+    start_channel: 1-1-25
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true

@@ -91,25 +91,26 @@ segment_display_player:
       color: black
 
   #Flash displays when turns start.
-  player_turn_started{number==1}:
+  #player_turn_started{number==1}:
+  ball_will_start{player==1}:
     display1:
       text: "{players[0].score:d}"
       action: flash
       key: scores
       color: black
-  player_turn_started{number==2}:
+  ball_will_start{player==2}:
     display2:
       text: "{players[1].score:d}"
       action: flash
       key: scores
       color: black
-  player_turn_started{number==3}:
+  ball_will_start{player==3}:
     display3:
       text: "{players[2].score:d}"
       action: flash
       key: scores
       color: black
-  player_turn_started{number==4}:
+  ball_will_start{player==4}:
     display4:
       text: "{players[3].score:d}"
       action: flash
