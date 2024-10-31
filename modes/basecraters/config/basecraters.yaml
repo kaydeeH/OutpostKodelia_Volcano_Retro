@@ -30,6 +30,14 @@ event_player:
     continue_craters|1s
   playfield_active:
     continue_craters|1s
+  crater_1_hit{current_player.crater_2_scored==1 and current_player.crater_3_scored==1 and current_player.crater_4_scored==1}:
+    light_special
+  crater_2_hit{current_player.crater_1_scored==1 and current_player.crater_3_scored==1 and current_player.crater_4_scored==1}:
+    light_special
+  crater_3_hit{current_player.crater_1_scored==1 and current_player.crater_2_scored==1 and current_player.crater_4_scored==1}:
+    light_special
+  crater_4_hit{current_player.crater_1_scored==1 and current_player.crater_2_scored==1 and current_player.crater_3_scored==1}:
+    light_special
 
 timers:
   craters_timer:
@@ -188,6 +196,19 @@ variable_player:
   timer_4x_multiplier_timer_complete:
     playfield_multiplier:
       int: 1
+      action: set
+  light_special:
+    crater_1_scored:
+      int: 0
+      action: set
+    crater_2_scored:
+      int: 0
+      action: set
+    crater_3_scored:
+      int: 0
+      action: set
+    crater_4_scored:
+      int: 0
       action: set
 
 show_player:

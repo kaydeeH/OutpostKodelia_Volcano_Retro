@@ -11,3 +11,66 @@ settings:
     key_type: int
     sort: 100
     settingType: standard
+  replay_limit:
+    label: Replay Limit
+    values:
+      1: "Limit to one replay\nper player per game."
+      0: "No Replay Limit"
+    key_type: int
+    default: 1
+    sort: 101
+    settingType: standard
+  novelty_mode:
+    label: Novelty Mode (Overrides Game Mode Setting)
+    values:
+      1: "Special/Extra Ball award 50K.\nHS, HSTD, Match disabled."
+      0: "Normal Game Mode"
+    key_type: int
+    default: 0
+    sort: 102
+    settingType: standard
+  game_mode: #Need to figure out what this setting really does.
+    label: Game Mode (HSTD and Match Awards)
+    values:
+      1: "Extra Ball - HSTD and Match disabled."
+      0: "Replay - HSTD and Match award a Replay."
+    key_type: int
+    default: 0
+    sort: 103
+    settingType: standard
+  playfield_special:
+    label: Playfield Special Awards
+    values:
+      1: "Extra Ball"
+      0: "Special (Replay)"
+    key_type: int
+    default: 0
+    sort: 104
+    settingType: standard
+  high_score_to_date:
+    label: High Score To Date
+    values:
+      0: "Not Displayed - No Award"
+      1: "Displayed - No Award"
+      2: "Displayed - Awards 2 replays"
+      3: "Displayed - Awards 3 replays"
+    key_type: int
+    default: 2
+    sort: 105
+    settingType: standard
+  attract_features:
+    label: Attract Features
+    values:
+      1: "ON"
+      0: "OFF"
+    default: 1
+    sort: 106
+    settingType: standard
+  liberal_conservative:
+    label: Liberal or Conservative
+    values:
+      1: "Liberal:\nBall through right outlane with\ngate closed will light EXTRA BALL\nfor one shot only."
+      0: "Conservative:\nNo EXTRA BALL through right outlane."
+    default: 1
+    sort: 107
+    settingType: standard

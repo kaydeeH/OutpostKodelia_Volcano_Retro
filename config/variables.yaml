@@ -22,6 +22,9 @@ player_vars:
   crater_4_scored:
     value_type: int
     initial_value: 0
+  special_ready:
+    value_type: int
+    initial_value: 0
   playfield_multiplier:
     value_type: int
     initial_value: 1
