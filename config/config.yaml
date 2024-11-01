@@ -1,5 +1,4 @@
 #config_version=6
-
 config:
   - assets.yaml
   - coils.yaml
@@ -41,11 +40,11 @@ modes:
   - basespinner
   - baselanesandgate
   - baseballsave
+  - outlanetoextraball
 
 custom_code:
   - custom_code.bonus_counter.BonusCounter
   - custom_code.bonus_light_controller.BonusLightController
-  - custom_code.drain_to_extra_ball.DrainToExtraBall
   - custom_code.match_alerter.MatchAlerter
 
 game:

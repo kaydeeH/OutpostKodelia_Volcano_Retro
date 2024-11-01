@@ -12,6 +12,7 @@ class DrainToExtraBall(CustomCode):
         switches = self.machine.switches.items_tagged('eb_kill')
         for switch in switches:
             self.info_log("Kill Switch: " + switch.name)
-        future = self.machine.switch_controller.wait_for_any_switch(switches, 1, True, 1)
+        future = (self.machine.switch_controller.
+                  wait_for_any_switch(switches=switches, state=1, only_on_change=True, ms=1))
         result = await future
         self.info_log("Kill Switch Reported: " + result)

@@ -58,8 +58,8 @@ extra_balls:
   extra_ball:
     award_events: award_extra_ball
     light_events: extra_ball_ready
-  outlane_extra_ball:
-    award_events: award_outlane_extra_ball
-    light_events: outlane_eb_ready
+#  outlane_extra_ball:
+#    award_events: award_outlane_extra_ball
+#    light_events: outlane_eb_ready
   special_extra_ball:
     award_events: award_special_extra_ball

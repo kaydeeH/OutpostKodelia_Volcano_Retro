@@ -1,5 +1,4 @@
 #config_version=6
-
 mode:
   start_events: mode_base_started
   priority: 100
@@ -46,6 +45,10 @@ variable_player:
     outlane_eb_ready:
       int: 1
       action: set
+  outlane2eb_hit:
+    outlane_eb_ready:
+      int: 0
+      action: set
 
 event_player:
   firepit_hit{current_player.extra_ball_ready==1 and settings.novelty_mode==0}:
@@ -82,5 +85,9 @@ show_player:
     eb_ready:
       action: stop
   firepit_hit{current_player.outlane_eb_ready==1 and settings.novelty_mode==1}:
+    eb_ready:
+      action: stop
+  #The following comes from the outlanetoextraball.yaml file.
+  outlane2eb_hit:
     eb_ready:
       action: stop

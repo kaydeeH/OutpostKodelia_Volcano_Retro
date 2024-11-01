@@ -1,0 +1,50 @@
+#config_version=6
+
+mode:
+  start_events: outlane_eb_ready
+  stop_events: ball_will_end, award_outlane_extra_ball, outlane2eb_hit
+  priority: 100
+  events_when_started: outlanetoextraball_setup
+
+extra_balls:
+  outlane_extra_ball:
+    award_events: award_outlane_extra_ball
+    light_events: outlanetoextraball_setup
+
+shots:
+  outlane2eb:
+    switches:
+      - s_pop_upper
+      - s_pop_mid
+      - s_pop_lower_left
+      - s_pop_lower_right
+      - s_slingshot_left
+      - s_slingshot_right
+      - s_drain
+      - s_spinner
+      - s_top_saucer
+      - s_kicking_target
+      - s_left_targets_1
+      - s_left_targets_2
+      - s_left_targets_3
+      - s_left_targets_4
+      - s_left_targets_5
+      - s_right_targets_1
+      - s_right_targets_2
+      - s_right_targets_3
+      - s_right_targets_4
+      - s_right_targets_5
+      - s_crater_1
+      - s_crater_2
+      - s_crater_3
+      - s_crater_4
+      - s_10pt_top
+      - s_10pt_left_targets
+      - s_10pt_right_targets
+      - s_10pt_left_upper
+      - s_10pt_left_mid
+      - s_spot_target
+      - s_outlane_right
+      - s_outlane_left
+      - s_return_left
+      - s_rollunder
