@@ -9,16 +9,12 @@ switches:
     number:
   s_pop_upper:
     number:
-    tags: eb_kill
   s_pop_mid:
     number:
-    tags: eb_kill
   s_pop_lower_left:
     number:
-    tags: eb_kill
   s_pop_lower_right:
     number:
-    tags: eb_kill
   s_slingshot_left:
     number:
   s_slingshot_right:
@@ -37,7 +33,6 @@ switches:
     number:
   s_drain:
     number:
-    tags: eb_kill
   s_trough_left:
     number:
   s_trough_right:
