@@ -4,33 +4,33 @@ ball_devices:
   bd_drain:
     ball_switches: s_drain
     eject_coil: c_drain_eject
-    tags: drain, trough
+    tags: drain
     eject_timeouts: 3s
     eject_targets: bd_trough
+  #TODO For bd_trough to work we'll need to add a ball detection switch to the middle of the trough.
   bd_trough:
-    ball_switches: s_trough_left, s_trough_right
+    ball_switches: s_trough_left, s_trough_right , s_trough_center
     eject_coil: c_trough_release
     eject_targets: bd_plunger
     tags: home, trough
     eject_timeouts: 3s
-    request_ball_events: balldevice_bd_trough_ball_eject_success
   #TODO For bd_plunger to work we'll need to add a ball detection switch to the shooter lane.
   bd_plunger:
     ball_switches: s_plunger
     mechanical_eject: true
     eject_targets: playfield
   bd_subway:
-    #TODO Volcano only has one switch here. May need to find a way to add a second for this to behave properly.
-    #TODO So for now, I've just added the extra switch.
-    ball_switches: s_subway_1, s_subway_2
+    ball_switches: s_subway_1
     eject_coil: c_subway_eject
     eject_targets: playfield
     eject_timeouts: 2s
+  #TODO For bd_subway_pre to work we'll need to add two ball detection switches to the subway.
   bd_subway_pre:
-    ball_switches: s_subway_3
+    ball_switches: s_subway_2, s_subway_3, s_subway_4
     eject_coil: c_subway_release
     eject_targets: bd_subway
     captures_from: playfield
+    eject_timeouts: 2s
   bd_firepit:
     ball_switches: s_firepit_kicker
     eject_coil: c_firepit_kicker
@@ -43,4 +43,4 @@ ball_devices:
     eject_targets: playfield
     captures_from: playfield
 
-virtual_platform_start_active_switches: s_drain, s_trough_left, s_trough_right
+virtual_platform_start_active_switches: s_trough_left, s_trough_right, s_trough_center #s_drain,

@@ -37,6 +37,8 @@ switches:
     number:
   s_trough_right:
     number:
+  s_trough_center:
+    number:
   s_plunger:
     number:
   s_start:
@@ -59,6 +61,8 @@ switches:
   s_subway_2:
     number:
   s_subway_3:
+    number:
+  s_subway_4:
     number:
   s_firepit_kicker:
     number:

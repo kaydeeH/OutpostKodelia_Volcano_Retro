@@ -2,30 +2,69 @@
 mode:
   start_events: ball_started
   priority: 1000
+  events_when_started: multiball_init_done
 
-#TODO This still needs a lot of work to ensure ball-to-ball and player-to-player behaviors work as desired. Right now
-#TODO it does not. It's pretty easy to end up with surprise extra balls on the playfield that just don't exist.
-#TODO May require a state machine of some sort to enable/disable all of this properly, and track player-to-player.
-#TODO Should probably try to confirm exactly how the original handled this, then decide whether to replicate or enhance.
 multiball_locks:
-  volcano_prelock:
-    balls_to_lock: 2
-    lock_devices: bd_subway_pre
-    balls_to_replace: 1
-    #disable_events: pop_mid_hit
-    locked_ball_counting_strategy: physical_only
   volcano_lock:
-    balls_to_lock: 1
-    lock_devices: bd_subway
-    balls_to_replace: 1
-    #disable_events: pop_mid_hit
+    balls_to_lock: 3
+    lock_devices: bd_subway_pre
+    balls_to_replace: 2
+    enable_events: lock_one, lock_two, lock_three
+    disable_events: multiball_volcano_mb_started, multiball_lock_volcano_lock_locked_ball
     locked_ball_counting_strategy: physical_only
 
 multiballs:
-  v_mb:
+  volcano_mb:
     ball_count: 3
     ball_count_type: total
-    shoot_again: 0s
-    ball_locks: bd_subway, bd_subway_pre
+    shoot_again: 1ms
+    ball_locks: bd_subway_pre
     replace_balls_in_play: true
     start_events: multiball_lock_volcano_lock_full
+
+event_player:
+  crater_1_hit{current_player.crater1_lit==1}:
+    enable_lock_check
+  crater_2_hit{current_player.crater2_lit==1}:
+    enable_lock_check
+  crater_3_hit{current_player.crater3_lit==1}:
+    enable_lock_check
+  crater_4_hit{current_player.crater4_lit==1}:
+    enable_lock_check
+  enable_lock_check{device.state_machines.multiball_state.state == "start"}:
+    lock_one
+  enable_lock_check{device.state_machines.multiball_state.state == "1_locked"}:
+    lock_two
+  enable_lock_check{device.state_machines.multiball_state.state == "2_locked"}:
+    lock_three
+
+variable_player:
+  timer_craters_timer_tick{ticks==0}:
+    crater4_lit:
+      int: 1
+      action: set
+  timer_craters_timer_tick{ticks==1}:
+    crater3_lit:
+      int: 1
+      action: set
+  timer_craters_timer_tick{ticks==2}:
+    crater2_lit:
+      int: 1
+      action: set
+  timer_craters_timer_tick{ticks==3}:
+    crater1_lit:
+      int: 1
+      action: set
+  timer_craters_timer_tick{ticks==4}:
+    crater1_lit:
+      int: 0
+      action: set
+    crater2_lit:
+      int: 0
+      action: set
+    crater3_lit:
+      int: 0
+      action: set
+    crater4_lit:
+      int: 0
+      action: set

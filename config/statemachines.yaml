@@ -1,0 +1,26 @@
+#config_version=6
+
+state_machines:
+  multiball_state:
+    states:
+      start:
+        label: Multiball Empty
+      1_locked:
+        label: Muiltiball - One Locked
+      2_locked:
+        label: Muiltiball - Two Locked
+      3_locked:
+        label: Muiltiball - Three Locked
+    transitions:
+      - source: 1_locked, 2_locked
+        target: start
+        events: game_start, multiball_volcano_mb_started
+      - source: start
+        target: 1_locked
+        events: lock_one
+      - source: 1_locked
+        target: 2_locked
+        events: lock_two
+      - source: 2_locked
+        target: 3_locked
+        events: lock_three

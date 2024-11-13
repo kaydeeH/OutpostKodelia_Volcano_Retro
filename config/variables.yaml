@@ -52,3 +52,15 @@ player_vars:
   ball_save_ready:
     value_type: int
     initial_value: 0
+  crater1_lit:
+    value_type: int
+    initial_value: 0
+  crater2_lit:
+    value_type: int
+    initial_value: 0
+  crater3_lit:
+    value_type: int
+    initial_value: 0
+  crater4_lit:
+    value_type: int
+    initial_value: 0

@@ -15,6 +15,7 @@ config:
   - settings.yaml
   - variables.yaml
   - droptargets.yaml
+  - statemachines.yaml
 
 modes:
 # base modules
@@ -50,3 +51,11 @@ custom_code:
 game:
   balls_per_game: settings.balls_per_game
   max_players: 4
+
+#logging:
+#  console:
+#    timers: none
+#    event_manager: none
+#  file:
+#    timers: none
+#    event_manager: none
