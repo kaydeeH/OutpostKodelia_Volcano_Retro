@@ -63,3 +63,7 @@ extra_balls:
 #    light_events: outlane_eb_ready
   special_extra_ball:
     award_events: award_special_extra_ball
+
+sound_player:
+  base_setup:
+    beep

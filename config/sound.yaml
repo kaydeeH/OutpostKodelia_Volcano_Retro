@@ -19,3 +19,7 @@ sound_system:
       type: standard
       simultaneous_sounds: 8
       volume: 0.8
+
+sounds:
+  beep:
+    file: beep-01a.wav
