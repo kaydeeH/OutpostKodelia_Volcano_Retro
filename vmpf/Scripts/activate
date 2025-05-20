@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="d:\dev\OutpostKodelia_Volcano_Retro\vmpf"
+VIRTUAL_ENV="D:\dev\OutpostKodelia_Volcano_Retro\vmpf"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
